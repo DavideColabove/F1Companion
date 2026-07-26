@@ -1,4 +1,6 @@
 import requests
+import time
+import sys
 
 def get_driver_laps(session_key, driver_number):
     url = "https://api.openf1.org/v1/laps"
@@ -18,13 +20,13 @@ def get_driver_laps(session_key, driver_number):
             return
 
         response.raise_for_status()
-
         laps_data = response.json()
 
         if not laps_data:
             print(f"\nNessun dato trovato con questi parametri. Verifica l'ID sessione!")
             return
 
+        print("\n") 
         print("-" *50)
         print(f"Tempo PER giro")
         print("-" *50)
@@ -74,6 +76,7 @@ def search_max_speed(session_key, driver_number):
                 max_speed = current_speed
                 peak_details = packet
 
+        print("\n")
         print("-" *50)
         print(f"Velocità MASSIMA registrata: {max_speed} km/h")
         print("-" *50)
@@ -111,12 +114,13 @@ def analyze_pit_stop(session_key, driver_number):
             print("Nessun dato relativo ai pit stop!")
             return
 
+        print("\n")
         print("-" *50)
         print(f"Dati PIT stop")
         print("-" *50)
 
         pit_stop_counter = len(pit_data)
-        print(f"\nIl pilota ha effettuato {pit_stop_counter} pit stop.")
+        print(f"Il pilota ha effettuato {pit_stop_counter} pit stop.")
 
 
         fastest_pit = float('inf')
@@ -131,13 +135,69 @@ def analyze_pit_stop(session_key, driver_number):
         else:
             print(f"Il pit stop più veloce è durato {fastest_pit} secondi.")
 
+        print("-" *50)
+
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
 
+def simulate_dashboard(session_key, driver_number):
+    url = "https://api.openf1.org/v1/car_data"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}     
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Dashboard IRT")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        car_data = response.json()
+
+        if not car_data:
+            print("Nessun dato relativo alla velocità!")
+            return
         
+        for packet in car_data:
+            speed = packet.get("speed",0)
+            if speed==0:
+                continue
+            gear_number = packet.get("n_gear",0)
+            rpm = packet.get("rpm",0)
+            throttle = packet.get("throttle",0)
+            brake = packet.get("brake",0)
+
+            dashboard_stream = f"| Velocità: {speed:3} km/h | Marcia: {gear_number} | RPM: {rpm} | Acceleratore: {throttle}% | Freno: {brake}% |"
+
+            sys.stdout.write('\r' + dashboard_stream)
+            sys.stdout.flush()
+
+            time.sleep(0.27)
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+            print(f"Errore di comunicazione con le API: {e}")
+
+        
+
+        
+
+
 
 if __name__ == "__main__":
     print(f"\nAnalizzo i dati per il pilota {55} nella sessione {9159}...")
     get_driver_laps(session_key=9159, driver_number=55)
     search_max_speed(session_key=9159, driver_number=55)
     analyze_pit_stop(session_key=9159, driver_number=55)
+    simulate_dashboard(session_key=9159, driver_number=55)
