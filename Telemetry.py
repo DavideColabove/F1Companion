@@ -189,8 +189,64 @@ def simulate_dashboard(session_key, driver_number):
     except requests.exceptions.RequestException as e:
             print(f"Errore di comunicazione con le API: {e}")
 
-        
+def analyze_weather(session_key):
+    url = "https://api.openf1.org/v1/weather"  
 
+    parameters = {"session_key": session_key}     
+    
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Condizioni METEO real-time")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        weather_data = response.json()
+
+        if not weather_data:
+            print("Nessun dato relativo al meteo!")
+            return 
+
+        max_temp = 0
+        min_temp = float('inf')
+        wet = False
+
+        for packet in weather_data:
+            air_temp = packet.get("air_temperature", 0)
+            track_temp = packet.get("track_temperature", 0)
+            humidity = packet.get("humidity", 0)
+            rainfall = packet.get("rainfall", 0)
+
+            if rainfall > 0:
+                wet = True
+
+            if track_temp:
+                if track_temp > max_temp:
+                    max_temp = track_temp
+                if track_temp < min_temp:
+                    min_temp = track_temp
+
+            weather_stream = f"| Temperatura aria: {air_temp}°C | Temperatura asfalto: {track_temp}°C | Umidità : {humidity}% | Pioggia: {wet} |"
+
+            sys.stdout.write('\r' + weather_stream)
+            sys.stdout.flush()
+            
+            time.sleep(0.5)
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+            print(f"Errore di comunicazione con le API: {e}")
         
 
 
@@ -200,4 +256,6 @@ if __name__ == "__main__":
     get_driver_laps(session_key=9159, driver_number=55)
     search_max_speed(session_key=9159, driver_number=55)
     analyze_pit_stop(session_key=9159, driver_number=55)
-    simulate_dashboard(session_key=9159, driver_number=55)
+    #simulate_dashboard(session_key=9159, driver_number=55)
+    analyze_weather(session_key=9159)
+
