@@ -1,1 +1,1 @@
-# F1dashboard
+# F1companion
