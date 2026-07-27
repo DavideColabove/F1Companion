@@ -1,1 +1,1 @@
-# F1companion
+# F1Companion
