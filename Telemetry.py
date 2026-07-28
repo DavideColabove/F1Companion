@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import fastf1
 import time
 import sys
@@ -245,3 +246,266 @@ if __name__ == "__main__":
     analyze_pit_stop(session, DRIVER)
     simulate_dashboard(session, DRIVER)
     #analyze_weather(session)
+=======
+import requests
+import time
+import sys
+
+def get_driver_laps(session_key, driver_number):
+    url = "https://api.openf1.org/v1/laps"
+
+    parameter = { "session_key": session_key, "driver_number": driver_number}
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    try:
+        response = requests.get(url, params=parameter, headers=headers)
+
+        if response.status_code == 401:
+            print("\nErrore 401: Il server continua a bloccarci. Potrebbe essere necessario usare un'altra session_key.")
+            print(f"Dettagli dal server: {response.text}")
+            return
+
+        response.raise_for_status()
+        laps_data = response.json()
+
+        if not laps_data:
+            print(f"\nNessun dato trovato con questi parametri. Verifica l'ID sessione!")
+            return
+
+        print("\n") 
+        print("-" *50)
+        print(f"Tempo PER giro")
+        print("-" *50)
+
+        for lap in laps_data[:20]:
+            lap_number = lap.get("lap_number", "N/D")
+            lap_seconds = lap.get("lap_duration","N/D")
+
+            print(f"Giro: {lap_number} | Tempo: {lap_seconds} secondi")
+
+        print("-" *50)
+
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
+
+def search_max_speed(session_key, driver_number): 
+    url = "https://api.openf1.org/v1/car_data"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    try: 
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        telemetry_data = response.json()
+
+        if not telemetry_data:
+            print("Nessun dato di telemetria!")
+            return
+
+        max_speed = 0
+        peak_details = None
+
+        for packet in telemetry_data:
+            current_speed = packet.get("speed", 0)
+
+            if current_speed > max_speed:
+                max_speed = current_speed
+                peak_details = packet
+
+        print("\n")
+        print("-" *50)
+        print(f"Velocità MASSIMA registrata: {max_speed} km/h")
+        print("-" *50)
+        print("Dettagli dell'auto in quel momento esatto:")
+        print(f"1. Marcia inserita: {peak_details.get('n_gear')}")
+        print(f"2. Giri motore (RPM): {peak_details.get('rpm')}")
+        print(f"3. Acceleratore: {peak_details.get('throttle')}%")
+        print(f"4. Freno premuto: {'Sì' if peak_details.get('brake') > 0 else 'No'}")
+        print(f"5. DRS Aperto: {'Sì' if peak_details.get('drs') in [10, 12, 14] else 'No'}")
+        print("-" * 50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
+
+def analyze_pit_stop(session_key, driver_number):
+    url = "https://api.openf1.org/v1/pit"
+    
+    parameters = {"session_key": session_key, "driver_number": driver_number}
+    
+    headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        }
+    
+    try: 
+        response = requests.get(url, params=parameters, headers=headers)
+    
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+    
+        response.raise_for_status()
+        pit_data = response.json()
+    
+        if not pit_data:
+            print("Nessun dato relativo ai pit stop!")
+            return
+
+        print("\n")
+        print("-" *50)
+        print(f"Dati PIT stop")
+        print("-" *50)
+
+        pit_stop_counter = len(pit_data)
+        print(f"Il pilota ha effettuato {pit_stop_counter} pit stop.")
+
+
+        fastest_pit = float('inf')
+        for packet in pit_data:
+            current = packet.get("pit_duration") 
+            if current is not None:
+                if current < fastest_pit:
+                    fastest_pit = current
+
+        if fastest_pit == float('inf'):
+            print("Nessun tempo valido registrato per i pit stop.")
+        else:
+            print(f"Il pit stop più veloce è durato {fastest_pit} secondi.")
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
+
+def simulate_dashboard(session_key, driver_number):
+    url = "https://api.openf1.org/v1/car_data"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}     
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Dashboard IRT")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        car_data = response.json()
+
+        if not car_data:
+            print("Nessun dato relativo alla velocità!")
+            return
+        
+        for packet in car_data:
+            speed = packet.get("speed",0)
+            if speed==0:
+                continue
+            gear_number = packet.get("n_gear",0)
+            rpm = packet.get("rpm",0)
+            throttle = packet.get("throttle",0)
+            brake = packet.get("brake",0)
+
+            dashboard_stream = f"| Velocità: {speed:3} km/h | Marcia: {gear_number} | RPM: {rpm} | Acceleratore: {throttle}% | Freno: {brake}% |"
+
+            sys.stdout.write('\r' + dashboard_stream)
+            sys.stdout.flush()
+
+            time.sleep(0.27)
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+            print(f"Errore di comunicazione con le API: {e}")
+
+def analyze_weather(session_key):
+    url = "https://api.openf1.org/v1/weather"  
+
+    parameters = {"session_key": session_key}     
+    
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Condizioni METEO real-time")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        weather_data = response.json()
+
+        if not weather_data:
+            print("Nessun dato relativo al meteo!")
+            return 
+
+        max_temp = 0
+        min_temp = float('inf')
+        wet = False
+
+        for packet in weather_data:
+            air_temp = packet.get("air_temperature", 0)
+            track_temp = packet.get("track_temperature", 0)
+            humidity = packet.get("humidity", 0)
+            rainfall = packet.get("rainfall", 0)
+
+            if rainfall > 0:
+                wet = True
+
+            if track_temp:
+                if track_temp > max_temp:
+                    max_temp = track_temp
+                if track_temp < min_temp:
+                    min_temp = track_temp
+
+            weather_stream = f"| Temperatura aria: {air_temp}°C | Temperatura asfalto: {track_temp}°C | Umidità : {humidity}% | Pioggia: {wet} |"
+
+            sys.stdout.write('\r' + weather_stream)
+            sys.stdout.flush()
+            
+            time.sleep(0.5)
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+            print(f"Errore di comunicazione con le API: {e}")
+        
+
+
+
+if __name__ == "__main__":
+    print(f"\nAnalizzo i dati per il pilota {55} nella sessione {9159}...")
+    get_driver_laps(session_key=9159, driver_number=55)
+    search_max_speed(session_key=9159, driver_number=55)
+    analyze_pit_stop(session_key=9159, driver_number=55)
+    #simulate_dashboard(session_key=9159, driver_number=55)
+    analyze_weather(session_key=9159)
+
+>>>>>>> 743fee43a43c5e9b7ab2d3c06fecdb959c8d13df
