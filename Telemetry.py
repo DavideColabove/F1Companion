@@ -7,10 +7,6 @@ fastf1.Cache.enable_cache("f1_cache")
 
 
 def load_session(year, grand_prix, session_type="R"):
-    """
-    Carica una sessione FastF1.
-    session_type: 'R' = Gara, 'Q' = Qualifiche, 'FP1'/'FP2'/'FP3' = Prove libere
-    """
     print(f"\nCaricamento sessione: {grand_prix} {year} - {session_type}...")
     session = fastf1.get_session(year, grand_prix, session_type)
     session.load()
@@ -19,10 +15,6 @@ def load_session(year, grand_prix, session_type="R"):
 
 
 def get_driver_pos(session, driver_abbr):
-    """
-    Mostra la posizione finale del pilota nella gara.
-    Gestisce DNF (ritirato), DNS (non partito) e DSQ (squalificato).
-    """
     print("\n")
     print("-" * 50)
     print(f"Risultato finale - {driver_abbr}")
@@ -68,10 +60,6 @@ def get_driver_pos(session, driver_abbr):
 
 
 def get_driver_laps(session, driver_abbr):
-    """
-    Mostra i tempi sul giro di un pilota.
-    driver_abbr: abbreviazione del pilota, es. 'VER', 'HAM', 'LEC'
-    """
     print("\n")
     print("-" * 50)
     print(f"Tempo PER giro - {driver_abbr}")
@@ -98,9 +86,6 @@ def get_driver_laps(session, driver_abbr):
 
 
 def search_max_speed(session, driver_abbr):
-    """
-    Trova la velocita' massima registrata da un pilota e i dettagli dell'auto in quel momento.
-    """
     print("\n")
     print("-" * 50)
     print(f"Velocita' MASSIMA - {driver_abbr}")
@@ -134,11 +119,6 @@ def search_max_speed(session, driver_abbr):
 
 
 def analyze_pit_stop(session, driver_abbr):
-    """
-    Analizza i pit stop di un pilota.
-    In FastF1, PitInTime e' sul giro in cui si entra ai box,
-    mentre PitOutTime e' sul giro successivo (uscita dai box).
-    """
     print("\n")
     print("-" * 50)
     print(f"Dati PIT stop - {driver_abbr}")
@@ -263,5 +243,5 @@ if __name__ == "__main__":
     get_driver_laps(session, DRIVER)
     search_max_speed(session, DRIVER)
     analyze_pit_stop(session, DRIVER)
-    #simulate_dashboard(session, DRIVER)
-    analyze_weather(session)
+    simulate_dashboard(session, DRIVER)
+    #analyze_weather(session)
