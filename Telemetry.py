@@ -1,3 +1,4 @@
+from datetime import datetime
 import requests
 import time
 import sys
@@ -167,22 +168,36 @@ def simulate_dashboard(session_key, driver_number):
         if not car_data:
             print("Nessun dato relativo alla velocità!")
             return
+
+        prev_timestamp = None
         
         for packet in car_data:
             speed = packet.get("speed",0)
-            if speed==0:
-                continue
             gear_number = packet.get("n_gear",0)
             rpm = packet.get("rpm",0)
             throttle = packet.get("throttle",0)
             brake = packet.get("brake",0)
+            timestamp = packet.get("date")
 
+            if speed == 0 or timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                prev_timestamp = current_timestamp
+                continue
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+                                   
             dashboard_stream = f"| Velocità: {speed:3} km/h | Marcia: {gear_number} | RPM: {rpm} | Acceleratore: {throttle}% | Freno: {brake}% |"
 
             sys.stdout.write('\r' + dashboard_stream)
             sys.stdout.flush()
 
-            time.sleep(0.27)
+            time.sleep(timestamp_delta)
+
+            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -248,3 +263,63 @@ def analyze_weather(session_key):
     except requests.exceptions.RequestException as e:
             print(f"Errore di comunicazione con le API: {e}")
         
+def simulate_location(session_key, driver_number):
+    url = "https://api.openf1.org/v1/location"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}     
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Coordinate X,Y,Z")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        location_data = response.json()
+
+        if not location_data:
+            print("Nessun dato relativo alla posizione!")
+            return
+
+        prev_timestamp = None
+
+        for packet in location_data:
+            x_coordinate = packet.get("x")
+            y_coordinate = packet.get("y")
+            z_coordinate = packet.get("z")
+            timestamp = packet.get("date")
+
+            if x_coordinate == 0 or x_coordinate is None or timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                prev_timestamp = current_timestamp
+                continue
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+
+            location_stream = f"| Asse X: {x_coordinate:8.0f} | Asse Y: {y_coordinate:8.0f} | Asse Z: {z_coordinate:8.0f} |"
+
+            sys.stdout.write('\r' + location_stream)
+            sys.stdout.flush()
+
+            time.sleep(timestamp_delta)
+
+            prev_timestamp = current_timestamp
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
