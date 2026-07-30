@@ -1,4 +1,4 @@
-# F1Companiion
+# F1Companion
 
 ## Overview
 This project is a Python-based backend application designed to fetch, process, and transmit Formula 1 telemetry and tracking data. By utilizing the OpenF1 API, the system downloads historical race data and replays it by simulating a real-time environment. It acts as a reliable, asynchronous data provider for downstream applications, bypassing the limitations and authentication barriers of official live-timing servers.
