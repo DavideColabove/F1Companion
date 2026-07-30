@@ -17,6 +17,7 @@ The primary objective of this project is to serve as a robust data pipeline for 
 *   **Libraries:** `requests`, `threading`, `socket`, `json`, `datetime`, `time`, `sys`
 *   **Network Protocol:** UDP (User Datagram Protocol) over localhost (127.0.0.1)
 
+```mermaid
 graph TD
     A[OpenF1 API] -->|HTTPS Requests| B(Python Data Engine)
     
@@ -41,6 +42,7 @@ graph TD
     class A api;
     class B engine;
     class H ue5;
+```
 
 ## Development Note
 This software was developed entirely through manual coding, relying on independent research, debugging, and standard software engineering practices. No Artificial Intelligence tools were used to generate the source code. The use of AI was strictly limited to theoretical consultation regarding high-level architectural patterns—specifically concurrent execution models, dynamic time-delta synchronization, and local network routing—to bridge the gap between standard undergraduate computer science curricula and advanced real-time systems design. 
