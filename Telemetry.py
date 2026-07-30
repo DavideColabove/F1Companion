@@ -384,3 +384,71 @@ def simulate_intervals(session_key, driver_number):
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
 
+def simulate_laps(session_key, driver_number):
+    url = "https://api.openf1.org/v1/laps"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}     
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Dati del GIRO")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        laps_data = response.json()
+
+        if not laps_data:
+            print("Nessun dato relativo ai giri!")
+            return
+
+        prev_timestamp = None
+
+        for packet in laps_data:
+            lap_number = packet.get("lap_number")
+            sec1 = packet.get("duration_sector_1")
+            sec2 = packet.get("duration_sector_2")
+            sec3 = packet.get("duration_sector_3")
+            lap_duration = packet.get("lap_duration")
+            is_personal_best = packet.get("is_personal_best")
+            timestamp = packet.get("date_start")
+
+            if timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                timestamp_delta = 0
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+
+            lap_duration = lap_duration if lap_duration is not None else "N/A"
+            sec1 = sec1 if sec1 is not None else "N/A"
+            sec2 = sec2 if sec2 is not None else "N/A"
+            sec3 = sec3 if sec3 is not None else "N/A"
+
+            pb_text = " (MIGLIOR GIRO PERSONALE!)" if is_personal_best else ""
+            laps_stream = f"| Giro: {lap_number} | T1: {sec1} | T2: {sec2} | T3: {sec3} | Totale: {lap_duration}{pb_text} |"
+
+            time.sleep(timestamp_delta)
+
+            sys.stdout.write('\r' + laps_stream)
+            sys.stdout.flush()
+
+            prev_timestamp = current_timestamp
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
