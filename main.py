@@ -5,26 +5,29 @@ from Telemetry import (
     analyze_pit_stop, 
     simulate_dashboard, 
     analyze_weather,
-    simulate_location
+    simulate_location,
+    simulate_intervals
 )
 
 def main():
-    session = 9159
-    pilot = 55
+    session = 9165
+    pilot = 1
 
     telemetry_thread = threading.Thread(target=simulate_dashboard, args=(session,pilot))
     position_thread = threading.Thread(target=simulate_location, args=(session,pilot))
     weather_thread = threading.Thread(target=analyze_weather, args=(session,))
+    intervals_thread = threading.Thread(target=simulate_intervals, args=(session, pilot))
     
-    get_driver_laps(session_key=session, driver_number=pilot)
-    search_max_speed(session_key=session, driver_number=pilot)
-    analyze_pit_stop(session_key=session, driver_number=pilot)
+    # get_driver_laps(session_key=session, driver_number=pilot)
+    # search_max_speed(session_key=session, driver_number=pilot)
+    # analyze_pit_stop(session_key=session, driver_number=pilot)
     # simulate_dashboard(session_key=session, driver_number=pilot)
     # simulate_location(session_key=session, driver_number=pilot)
     # analyze_weather(session_key=session)
-    telemetry_thread.start()
-    position_thread.start()
-    weather_thread.start()
+    # telemetry_thread.start()
+    # position_thread.start()
+    # weather_thread.start()
+    # intervals_thread.start()
 
 if __name__ == "__main__":
     try:

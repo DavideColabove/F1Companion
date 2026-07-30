@@ -323,3 +323,64 @@ def simulate_location(session_key, driver_number):
 
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
+
+def simulate_intervals(session_key, driver_number):
+    url = "https://api.openf1.org/v1/intervals"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}     
+    
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Intervallo dal PRIMO e PRECEDENTE")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!") 
+            return 
+
+        response.raise_for_status()
+        gaps_data = response.json()
+
+        if not gaps_data:
+            print("Nessun dato relativo agli intervalli!")
+            return 
+
+        prev_timestamp = None
+
+        for packet in gaps_data:
+            leader_gap = packet.get("gap_to_leader")
+            interval = packet.get("interval")
+            timestamp = packet.get("date")
+
+            if leader_gap is None or interval is None or timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                prev_timestamp = current_timestamp
+                continue
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+
+            intervals_stream = f"| Gap Leader: +{leader_gap}s | Gap Precedente: +{interval}s |"
+
+            sys.stdout.write('\r' + intervals_stream)
+            sys.stdout.flush()
+
+            time.sleep(timestamp_delta)
+
+            prev_timestamp = current_timestamp
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
+
