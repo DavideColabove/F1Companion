@@ -17,5 +17,30 @@ The primary objective of this project is to serve as a robust data pipeline for 
 *   **Libraries:** `requests`, `threading`, `socket`, `json`, `datetime`, `time`, `sys`
 *   **Network Protocol:** UDP (User Datagram Protocol) over localhost (127.0.0.1)
 
+graph TD
+    A[OpenF1 API] -->|HTTPS Requests| B(Python Data Engine)
+    
+    subgraph Concurrency [Multithreading Environment]
+        B --> C[GPS Tracking Thread]
+        B --> D[Car Telemetry Thread]
+        B --> E[Sector & Laps Thread]
+        B --> F[Race Control Thread]
+    end
+    
+    C -->|Time-Delta Sync| G{UDP Sockets}
+    D -->|Time-Delta Sync| G
+    E -->|Time-Delta Sync| G
+    F -->|Time-Delta Sync| G
+    
+    G -->|JSON payloads via Localhost| H[(Unreal Engine 5)]
+    
+    classDef api fill:#f96,stroke:#333,stroke-width:2px;
+    classDef engine fill:#3498db,stroke:#333,stroke-width:2px,color:#fff;
+    classDef ue5 fill:#2ecc71,stroke:#333,stroke-width:2px,color:#fff;
+    
+    class A api;
+    class B engine;
+    class H ue5;
+
 ## Development Note
 This software was developed entirely through manual coding, relying on independent research, debugging, and standard software engineering practices. No Artificial Intelligence tools were used to generate the source code. The use of AI was strictly limited to theoretical consultation regarding high-level architectural patterns—specifically concurrent execution models, dynamic time-delta synchronization, and local network routing—to bridge the gap between standard undergraduate computer science curricula and advanced real-time systems design. 
