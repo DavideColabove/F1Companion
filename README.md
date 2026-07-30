@@ -17,6 +17,7 @@ The primary objective of this project is to serve as a robust data pipeline for 
 *   **Libraries:** `requests`, `threading`, `socket`, `json`, `datetime`, `time`, `sys`
 *   **Network Protocol:** UDP (User Datagram Protocol) over localhost (127.0.0.1)
 
+## System Design
 ```mermaid
 graph TD
     A[OpenF1 API] -->|HTTPS Requests| B(Python Data Engine)
