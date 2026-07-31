@@ -21,12 +21,12 @@ def sync_time(current_time_str, prev_time_obj):
 
     return current_time_obj
 
-def fetch_api_data(endpoint, **parameters):
+def fetch_api_data(endpoint, **parameters): # delego la raccolta da API alla funzione ausiliaria insieme ai checks
     url = f"{BASE_URL}/{endpoint}"
 
     try: 
         response = requests.get(url, params=parameters, headers=HEADERS)
-        
+
         if response.status_code == 401:
             print(f"Errore 401 sull'endpoint /{endpoint}: Sessione Live in corso. Riprova a fine gara!")
             return None
