@@ -591,3 +591,61 @@ def fetch_driver_info(session_key):
 
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
+
+def fetch_stints_info(session_key, driver_number):
+    url = "https://api.openf1.org/v1/stints"
+
+    parameters = {"session_key": session_key, "driver_number": driver_number}
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Informazioni GOMME")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        stints_data = response.json()
+
+        if not stints_data:
+            print("Nessun dato relativo agli eventi di gara!")
+            return        
+
+        stints_registry = {}
+
+        for packet in stints_data:
+            stint_number = packet.get("stint_number")
+            compound = packet.get("compound")
+            tyre_age_at_start = packet.get("tyre_age_at_start")
+            lap_start = packet.get("lap_start")
+            lap_end = packet.get("lap_end")
+
+            if lap_start is None:
+                continue
+
+            if lap_end is not None:
+                tyre_duration = lap_end - lap_start
+            else:
+                tyre_duration = "Fino a fine gara"
+
+            stints_registry[lap_start] = { #dizionario per Unreal
+                "compound": compound,
+                "tyre_duration": tyre_duration,
+                "tyre_age_at_start": tyre_age_at_start
+            }
+
+            print(f"\nNumero stint: #{stint_number}| Mescola: {compound} | Gomme usate: {tyre_age_at_start} | Giro iniziale: {lap_start} | Giro finale: {lap_end} |")
+
+        return stints_registry
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")

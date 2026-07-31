@@ -9,7 +9,8 @@ from Telemetry import (
     simulate_intervals,
     simulate_laps,
     simulate_race_control,
-    fetch_driver_info
+    fetch_driver_info,
+    fetch_stints_info
 )
 
 def main():
@@ -36,7 +37,8 @@ def main():
     # intervals_thread.start()
     # laps_thread.start()
     # race_control_thread.start()
-    fetch_driver_info(session_key=session)
+    # fetch_driver_info(session_key=session)
+    fetch_stints_info(session_key=session, driver_number=pilot)
 
 if __name__ == "__main__":
     try:
