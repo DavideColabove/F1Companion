@@ -8,7 +8,7 @@ def sync_time(current_time_str, prev_time_obj):
     current_time_obj = datetime.fromisoformat(current_time_str)
 
     if prev_time_obj is not None:
-        delta = (current_time_obj - current_time_str).total_seconds()
+        delta = (current_time_obj - prev_time_obj).total_seconds()
 
         if delta > 0:
             time.sleep(delta)
