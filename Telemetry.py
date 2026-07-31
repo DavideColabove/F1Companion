@@ -560,7 +560,7 @@ def fetch_driver_info(session_key):
         driver_data = response.json()
 
         if not driver_data:
-            print("Nessun dato relativo agli eventi di gara!")
+            print("Nessun dato relativo ai piloti!")
             return
 
         driver_registry = {}
@@ -649,3 +649,59 @@ def fetch_stints_info(session_key, driver_number):
 
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
+
+def simulate_leaderboard(session_key):
+    url = "https://api.openf1.org/v1/position"
+
+    parameters = {"session_key": session_key}
+
+    headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Live LEADERBOARD")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        leaderboard_data = response.json()
+
+        if not leaderboard_data:
+            print("Nessun dato relativo alla leaderboard!")
+            return
+
+        prev_timestamp = None
+
+        for packet in leaderboard_data:
+            driver_number = packet.get("driver_number")
+            position = packet.get("position")
+            timestamp = packet.get("date")
+
+            if timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                timestamp_delta = 0
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+
+            time.sleep(timestamp_delta)
+
+            print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
+
+            prev_timestamp = current_timestamp
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+            print(f"Errore di comunicazione con le API: {e}")

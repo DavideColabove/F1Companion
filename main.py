@@ -10,7 +10,8 @@ from Telemetry import (
     simulate_laps,
     simulate_race_control,
     fetch_driver_info,
-    fetch_stints_info
+    fetch_stints_info,
+    simulate_leaderboard
 )
 
 def main():
@@ -23,6 +24,7 @@ def main():
     intervals_thread = threading.Thread(target=simulate_intervals, args=(session, pilot))
     laps_thread = threading.Thread(target=simulate_laps, args=(session, pilot))
     race_control_thread = threading.Thread(target=simulate_race_control, args=(session,))
+    leaderboard_thread = threading.Thread(target=simulate_leaderboard, args=(session,))
     
     
     # get_driver_laps(session_key=session, driver_number=pilot)
@@ -38,7 +40,8 @@ def main():
     # laps_thread.start()
     # race_control_thread.start()
     # fetch_driver_info(session_key=session)
-    fetch_stints_info(session_key=session, driver_number=pilot)
+    # fetch_stints_info(session_key=session, driver_number=pilot)
+    leaderboard_thread.start()
 
 if __name__ == "__main__":
     try:
