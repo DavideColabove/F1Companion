@@ -2,6 +2,7 @@ from datetime import datetime
 import requests
 import time
 import sys
+from Utils import (sync_time)
 
 def get_driver_laps(session_key, driver_number):
     url = "https://api.openf1.org/v1/laps"
@@ -182,22 +183,12 @@ def simulate_dashboard(session_key, driver_number):
             if speed == 0 or timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                prev_timestamp = current_timestamp
-                continue
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
                                    
             dashboard_stream = f"| Velocità: {speed:3} km/h | Marcia: {gear_number} | RPM: {rpm} | Acceleratore: {throttle}% | Freno: {brake}% |"
 
             sys.stdout.write('\r' + dashboard_stream)
             sys.stdout.flush()
-
-            time.sleep(timestamp_delta)
-
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -251,12 +242,7 @@ def analyze_weather(session_key):
             if timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                timestamp_delta = 0
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             if rainfall > 0:
                 wet = True
@@ -269,12 +255,9 @@ def analyze_weather(session_key):
 
             weather_stream = f"| Aria: {air_temp}°C | Asf: {track_temp}°C | Pioggia: {wet} | Vento: {wind_speed}m/s ({wind_dir}°) | Press: {pressure}mbar |"
 
-            time.sleep(timestamp_delta)
-
             sys.stdout.write('\r' + weather_stream)
             sys.stdout.flush()
 
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -320,22 +303,12 @@ def simulate_location(session_key, driver_number):
             if x_coordinate == 0 or x_coordinate is None or timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                prev_timestamp = current_timestamp
-                continue
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             location_stream = f"| Asse X: {x_coordinate:8.0f} | Asse Y: {y_coordinate:8.0f} | Asse Z: {z_coordinate:8.0f} |"
 
             sys.stdout.write('\r' + location_stream)
             sys.stdout.flush()
-
-            time.sleep(timestamp_delta)
-
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -380,22 +353,12 @@ def simulate_intervals(session_key, driver_number):
             if leader_gap is None or interval is None or timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                prev_timestamp = current_timestamp
-                continue
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             intervals_stream = f"| Gap Leader: +{leader_gap}s | Gap Precedente: +{interval}s |"
 
             sys.stdout.write('\r' + intervals_stream)
             sys.stdout.flush()
-
-            time.sleep(timestamp_delta)
-
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -444,12 +407,7 @@ def simulate_laps(session_key, driver_number):
             if timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                timestamp_delta = 0
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             lap_duration = lap_duration if lap_duration is not None else "N/A"
             sec1 = sec1 if sec1 is not None else "N/A"
@@ -459,12 +417,8 @@ def simulate_laps(session_key, driver_number):
             pb_text = " (MIGLIOR GIRO PERSONALE!)" if is_personal_best else ""
             laps_stream = f"| Giro: {lap_number} | T1: {sec1} | T2: {sec2} | T3: {sec3} | Totale: {lap_duration}{pb_text} |"
 
-            time.sleep(timestamp_delta)
-
             sys.stdout.write('\r' + laps_stream)
             sys.stdout.flush()
-
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -510,12 +464,7 @@ def simulate_race_control(session_key):
             if timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                timestamp_delta = 0
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             category = category if category is not None else "N/A"
             flag = flag if flag is not None else "N/A"
@@ -523,12 +472,8 @@ def simulate_race_control(session_key):
 
             race_control_stream = f"| [Race Control - {category}] Bandiera: {flag} | Trascrizione: {message} |"
 
-            time.sleep(timestamp_delta)
-
             sys.stdout.write('\r' + race_control_stream)
             sys.stdout.flush()
-
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -688,18 +633,10 @@ def simulate_leaderboard(session_key):
             if timestamp is None:
                 continue
 
-            current_timestamp = datetime.fromisoformat(timestamp)
-
-            if prev_timestamp is None:
-                timestamp_delta = 0
-            else:
-                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
-
-            time.sleep(timestamp_delta)
+            prev_timestamp = sync_time(timestamp, prev_timestamp)
 
             print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
 
-            prev_timestamp = current_timestamp
 
         print("-" *50)
 
