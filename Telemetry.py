@@ -534,4 +534,60 @@ def simulate_race_control(session_key):
 
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
-            
+
+def fetch_driver_info(session_key):
+    url = "https://api.openf1.org/v1/drivers"
+
+    parameters = {"session_key": session_key}
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Informazioni sui PILOTI")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers=headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        driver_data = response.json()
+
+        if not driver_data:
+            print("Nessun dato relativo agli eventi di gara!")
+            return
+
+        driver_registry = {}
+
+        for packet in driver_data:
+            driver_number = packet.get("driver_number")
+            full_name = packet.get("full_name")
+            name_acronym = packet.get("name_acronym")
+            team_colour = packet.get("team_colour")
+
+            if driver_number is None:
+                continue
+
+            if team_colour is not None:
+                team_colour = f"#{team_colour}"
+            else:
+                team_colour = "#FFFFFF"
+
+            driver_registry[driver_number] = { #dizionario
+                "full_name": full_name,
+                "name_acronym": name_acronym,
+                "team_colour": team_colour
+            }
+
+            print(f"\nAuto: #{driver_number}| {name_acronym} | {full_name} | Colore: {team_colour} |")
+
+        return driver_registry
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
