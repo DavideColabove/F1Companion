@@ -7,7 +7,8 @@ from Telemetry import (
     analyze_weather,
     simulate_location,
     simulate_intervals,
-    simulate_laps
+    simulate_laps,
+    simulate_race_control
 )
 
 def main():
@@ -19,6 +20,7 @@ def main():
     weather_thread = threading.Thread(target=analyze_weather, args=(session,))
     intervals_thread = threading.Thread(target=simulate_intervals, args=(session, pilot))
     laps_thread = threading.Thread(target=simulate_laps, args=(session, pilot))
+    race_control_thread = threading.Thread(target=simulate_race_control, args=(session,))
     
     
     # get_driver_laps(session_key=session, driver_number=pilot)
@@ -31,7 +33,8 @@ def main():
     # position_thread.start()
     # weather_thread.start()
     # intervals_thread.start()
-    laps_thread.start()
+    # laps_thread.start()
+    race_control_thread.start()
 
 if __name__ == "__main__":
     try:

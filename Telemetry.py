@@ -236,11 +236,27 @@ def analyze_weather(session_key):
         min_temp = float('inf')
         wet = False
 
+        prev_timestamp = None
+
         for packet in weather_data:
             air_temp = packet.get("air_temperature", 0)
             track_temp = packet.get("track_temperature", 0)
             humidity = packet.get("humidity", 0)
             rainfall = packet.get("rainfall", 0)
+            timestamp = packet.get("date")
+            wind_speed = packet.get("wind_speed", 0)
+            wind_dir = packet.get("wind_direction", 0)
+            pressure = packet.get("pressure", 0)
+
+            if timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                timestamp_delta = 0
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
 
             if rainfall > 0:
                 wet = True
@@ -251,12 +267,14 @@ def analyze_weather(session_key):
                 if track_temp < min_temp:
                     min_temp = track_temp
 
-            weather_stream = f"| Temperatura aria: {air_temp}°C | Temperatura asfalto: {track_temp}°C | Umidità : {humidity}% | Pioggia: {wet} |"
+            weather_stream = f"| Aria: {air_temp}°C | Asf: {track_temp}°C | Pioggia: {wet} | Vento: {wind_speed}m/s ({wind_dir}°) | Press: {pressure}mbar |"
+
+            time.sleep(timestamp_delta)
 
             sys.stdout.write('\r' + weather_stream)
             sys.stdout.flush()
-            
-            time.sleep(0.5)
+
+            prev_timestamp = current_timestamp
 
         print("-" *50)
 
@@ -452,3 +470,68 @@ def simulate_laps(session_key, driver_number):
 
     except requests.exceptions.RequestException as e:
         print(f"Errore di comunicazione con le API: {e}")
+
+def simulate_race_control(session_key):
+    url = "https://api.openf1.org/v1/race_control"
+
+    parameters = {"session_key": session_key}
+
+    headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+
+    try:
+        print("\n")
+        print("-" *50)
+        print(f"Informazioni di RACE CONTROL")
+        print("-" *50)
+
+        response = requests.get(url, params=parameters, headers= headers)
+
+        if response.status_code==401:
+            print("Errore 401: Sessione Live in corso. Riprova a fine gara!")
+            return
+
+        response.raise_for_status()
+        race_control_data = response.json()
+
+        if not race_control_data:
+            print("Nessun dato relativo agli eventi di gara!")
+            return
+
+        prev_timestamp = None
+
+        for packet in race_control_data:
+            category = packet.get("category")
+            flag = packet.get("flag")
+            message = packet.get("message")
+            timestamp = packet.get("date")
+
+            if timestamp is None:
+                continue
+
+            current_timestamp = datetime.fromisoformat(timestamp)
+
+            if prev_timestamp is None:
+                timestamp_delta = 0
+            else:
+                timestamp_delta = (current_timestamp - prev_timestamp).total_seconds()
+
+            category = category if category is not None else "N/A"
+            flag = flag if flag is not None else "N/A"
+            message = message if message is not None else "N/A"
+
+            race_control_stream = f"| [Race Control - {category}] Bandiera: {flag} | Trascrizione: {message} |"
+
+            time.sleep(timestamp_delta)
+
+            sys.stdout.write('\r' + race_control_stream)
+            sys.stdout.flush()
+
+            prev_timestamp = current_timestamp
+
+        print("-" *50)
+
+    except requests.exceptions.RequestException as e:
+        print(f"Errore di comunicazione con le API: {e}")
+            
