@@ -11,7 +11,8 @@ from Telemetry import (
     simulate_race_control,
     fetch_driver_info,
     fetch_stints_info,
-    simulate_leaderboard
+    simulate_leaderboard,
+    fetch_session_info
 )
 
 def main():
@@ -41,7 +42,8 @@ def main():
     # race_control_thread.start()
     # fetch_driver_info(session_key=session)
     # fetch_stints_info(session_key=session, driver_number=pilot)
-    leaderboard_thread.start()
+    # leaderboard_thread.start()
+    fetch_session_info(session_key=session)
 
 if __name__ == "__main__":
     try:

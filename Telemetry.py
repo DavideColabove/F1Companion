@@ -428,3 +428,34 @@ def simulate_leaderboard(session_key):
         print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
 
     print("-" *50)
+
+def fetch_session_info(session_key):
+    print("\n")
+    print("-" *50)
+    print(f"Informazioni sul CIRCUITO")
+    print("-" *50)
+
+    session_data = fetch_api_data("sessions", session_key = session_key)
+
+    if not session_data:
+        print("Nessun dato relativo alla sessione!")
+        return
+
+    packet = session_data[0]
+
+    circuit = packet.get("circuit_short_name", "N/A")
+    country = packet.get("country_name", "N/A")
+    session = packet.get("session_name", "N/A")
+    session_type = packet.get("session_type", "N/A")
+
+    session_registry = {
+        "circuit": circuit,
+        "country": country,
+        "session": session,
+        "session_type": session_type
+    }
+
+    print(f"| Circuito: {circuit} ({country}) | Sessione: {session} | Tipo: {session_type} |")
+    print("-" *50)
+
+    return session_registry
