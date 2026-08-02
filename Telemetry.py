@@ -212,7 +212,7 @@ def fetch_session_info(session_key):
     return session_registry
 
 # Funzioni Threaded
-def simulate_radio(session_key, driver_number):
+def simulate_radio(session_key, driver_number, udp_client):
     print("\n")
     print("-" *50)
     print(f"Live RADIO")
@@ -235,11 +235,18 @@ def simulate_radio(session_key, driver_number):
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
 
+        radio_packet ={
+            "recording_url": recording_url,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("radio_communications", radio_packet)
+
         print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
         
     print("-" *50)
 
-def simulate_dashboard(session_key, driver_number):
+def simulate_dashboard(session_key, driver_number, udp_client):
     print("\n")
     print("-" *50)
     print(f"Dashboard IRT")
@@ -265,6 +272,17 @@ def simulate_dashboard(session_key, driver_number):
             continue
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
+
+        dashboard_packet ={
+            "speed": speed,
+            "gear_number": gear_number,
+            "rpm": rpm,
+            "throttle": throttle,
+            "brake": brake,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("dashboard_data", dashboard_packet)
                                 
         dashboard_stream = f"| Velocità: {speed:3} km/h | Marcia: {gear_number} | RPM: {rpm} | Acceleratore: {throttle}% | Freno: {brake}% |"
 
@@ -273,7 +291,7 @@ def simulate_dashboard(session_key, driver_number):
 
     print("-" *50)
 
-def simulate_weather(session_key):
+def simulate_weather(session_key, udp_client):
     print("\n")
     print("-" *50)
     print(f"Condizioni METEO real-time")
@@ -322,7 +340,7 @@ def simulate_weather(session_key):
 
     print("-" *50)
 
-def simulate_location(session_key, driver_number):
+def simulate_location(session_key, driver_number, udp_client):
     print("\n")
     print("-" *50)
     print(f"Coordinate X,Y,Z")
@@ -361,7 +379,7 @@ def simulate_location(session_key, driver_number):
 
     print("-" *50)
 
-def simulate_intervals(session_key, driver_number):
+def simulate_intervals(session_key, driver_number, udp_client):
     print("\n")
     print("-" *50)
     print(f"Intervallo dal PRIMO e PRECEDENTE")
@@ -392,7 +410,7 @@ def simulate_intervals(session_key, driver_number):
 
     print("-" *50)
 
-def simulate_laps(session_key, driver_number):
+def simulate_laps(session_key, driver_number, udp_client):
     print("\n")
     print("-" *50)
     print(f"Dati del GIRO")
@@ -434,7 +452,7 @@ def simulate_laps(session_key, driver_number):
 
     print("-" *50)
 
-def simulate_race_control(session_key):
+def simulate_race_control(session_key, udp_client):
     print("\n")
     print("-" *50)
     print(f"Informazioni di RACE CONTROL")
@@ -470,7 +488,7 @@ def simulate_race_control(session_key):
 
     print("-" *50)
 
-def simulate_leaderboard(session_key):
+def simulate_leaderboard(session_key, udp_client):
     print("\n")
     print("-" *50)
     print(f"Live LEADERBOARD")
