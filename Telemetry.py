@@ -6,7 +6,9 @@ from Utils import (sync_time,
                    fetch_api_data,
                    calculate_yaw)
 
-def get_driver_laps(session_key, driver_number):
+
+# Funzioni dati storici
+def analyze_driver_laps(session_key, driver_number):
     print("\n")
     print("-" *50)
     print(f"Dati GIRI")
@@ -31,8 +33,7 @@ def get_driver_laps(session_key, driver_number):
 
     print("-" *50)
 
-
-def search_max_speed(session_key, driver_number): 
+def analyze_max_speed(session_key, driver_number): 
     print("\n")
     print("-" *50)
     print(f"MAX Speed")
@@ -101,6 +102,143 @@ def analyze_pit_stop(session_key, driver_number):
 
     print("-" *50)
 
+# Funzioni non-Threaded
+def fetch_driver_info(session_key):
+    print("\n")
+    print("-" *50)
+    print(f"Informazioni sui PILOTI")
+    print("-" *50)
+
+    driver_data = fetch_api_data("drivers", session_key=session_key)
+
+    if not driver_data:
+        print("Nessun dato relativo ai piloti!")
+        return
+
+    driver_registry = {}
+
+    for packet in driver_data:
+        driver_number = packet.get("driver_number")
+        full_name = packet.get("full_name")
+        name_acronym = packet.get("name_acronym")
+        team_colour = packet.get("team_colour")
+
+        if driver_number is None:
+            continue
+
+        if team_colour is not None:
+            team_colour = f"#{team_colour}"
+        else:
+            team_colour = "#FFFFFF"
+
+        driver_registry[driver_number] = { #dizionario
+            "full_name": full_name,
+            "name_acronym": name_acronym,
+            "team_colour": team_colour
+        }
+
+        print(f"\nAuto: #{driver_number}| {name_acronym} | {full_name} | Colore: {team_colour} |")
+
+    return driver_registry
+
+def fetch_stints_info(session_key, driver_number):
+    print("\n")
+    print("-" *50)
+    print(f"Informazioni GOMME")
+    print("-" *50)
+
+    stints_data = fetch_api_data("stints", session_key=session_key, driver_number=driver_number)
+
+    if not stints_data:
+        print("Nessun dato relativo agli eventi di gara!")
+        return        
+
+    stints_registry = {}
+
+    for packet in stints_data:
+        stint_number = packet.get("stint_number")
+        compound = packet.get("compound")
+        tyre_age_at_start = packet.get("tyre_age_at_start")
+        lap_start = packet.get("lap_start")
+        lap_end = packet.get("lap_end")
+
+        if lap_start is None:
+            continue
+
+        if lap_end is not None:
+            tyre_duration = lap_end - lap_start
+        else:
+            tyre_duration = "Fino a fine gara"
+
+        stints_registry[lap_start] = { #dizionario per Unreal
+            "compound": compound,
+            "tyre_duration": tyre_duration,
+            "tyre_age_at_start": tyre_age_at_start
+        }
+
+        print(f"\nNumero stint: #{stint_number}| Mescola: {compound} | Gomme usate: {tyre_age_at_start} | Giro iniziale: {lap_start} | Giro finale: {lap_end} |")
+
+    return stints_registry
+
+def fetch_session_info(session_key):
+    print("\n")
+    print("-" *50)
+    print(f"Informazioni sul CIRCUITO")
+    print("-" *50)
+
+    session_data = fetch_api_data("sessions", session_key = session_key)
+
+    if not session_data:
+        print("Nessun dato relativo alla sessione!")
+        return
+
+    packet = session_data[0]
+
+    circuit = packet.get("circuit_short_name", "N/A")
+    country = packet.get("country_name", "N/A")
+    session = packet.get("session_name", "N/A")
+    session_type = packet.get("session_type", "N/A")
+
+    session_registry = {
+        "circuit": circuit,
+        "country": country,
+        "session": session,
+        "session_type": session_type
+    }
+
+    print(f"| Circuito: {circuit} ({country}) | Sessione: {session} | Tipo: {session_type} |")
+    print("-" *50)
+
+    return session_registry
+
+# Funzioni Threaded
+def simulate_radio(session_key, driver_number):
+    print("\n")
+    print("-" *50)
+    print(f"Live RADIO")
+    print("-" *50)
+
+    radio_data = fetch_api_data("team_radio", session_key=session_key, driver_number=driver_number)
+
+    if not radio_data:
+        print("Nessun dato relativo alle comunicazioni radio!")
+        return
+
+    prev_timestamp = None
+
+    for packet in radio_data:
+        recording_url = packet.get("recording_url")
+        timestamp = packet.get("date")
+
+        if timestamp is None:
+            continue
+
+        prev_timestamp = sync_time(timestamp, prev_timestamp)
+
+        print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
+        
+    print("-" *50)
+
 def simulate_dashboard(session_key, driver_number):
     print("\n")
     print("-" *50)
@@ -135,7 +273,7 @@ def simulate_dashboard(session_key, driver_number):
 
     print("-" *50)
 
-def analyze_weather(session_key):
+def simulate_weather(session_key):
     print("\n")
     print("-" *50)
     print(f"Condizioni METEO real-time")
@@ -332,83 +470,6 @@ def simulate_race_control(session_key):
 
     print("-" *50)
 
-def fetch_driver_info(session_key):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni sui PILOTI")
-    print("-" *50)
-
-    driver_data = fetch_api_data("drivers", session_key=session_key)
-
-    if not driver_data:
-        print("Nessun dato relativo ai piloti!")
-        return
-
-    driver_registry = {}
-
-    for packet in driver_data:
-        driver_number = packet.get("driver_number")
-        full_name = packet.get("full_name")
-        name_acronym = packet.get("name_acronym")
-        team_colour = packet.get("team_colour")
-
-        if driver_number is None:
-            continue
-
-        if team_colour is not None:
-            team_colour = f"#{team_colour}"
-        else:
-            team_colour = "#FFFFFF"
-
-        driver_registry[driver_number] = { #dizionario
-            "full_name": full_name,
-            "name_acronym": name_acronym,
-            "team_colour": team_colour
-        }
-
-        print(f"\nAuto: #{driver_number}| {name_acronym} | {full_name} | Colore: {team_colour} |")
-
-    return driver_registry
-
-def fetch_stints_info(session_key, driver_number):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni GOMME")
-    print("-" *50)
-
-    stints_data = fetch_api_data("stints", session_key=session_key, driver_number=driver_number)
-
-    if not stints_data:
-        print("Nessun dato relativo agli eventi di gara!")
-        return        
-
-    stints_registry = {}
-
-    for packet in stints_data:
-        stint_number = packet.get("stint_number")
-        compound = packet.get("compound")
-        tyre_age_at_start = packet.get("tyre_age_at_start")
-        lap_start = packet.get("lap_start")
-        lap_end = packet.get("lap_end")
-
-        if lap_start is None:
-            continue
-
-        if lap_end is not None:
-            tyre_duration = lap_end - lap_start
-        else:
-            tyre_duration = "Fino a fine gara"
-
-        stints_registry[lap_start] = { #dizionario per Unreal
-            "compound": compound,
-            "tyre_duration": tyre_duration,
-            "tyre_age_at_start": tyre_age_at_start
-        }
-
-        print(f"\nNumero stint: #{stint_number}| Mescola: {compound} | Gomme usate: {tyre_age_at_start} | Giro iniziale: {lap_start} | Giro finale: {lap_end} |")
-
-    return stints_registry
-
 def simulate_leaderboard(session_key):
     print("\n")
     print("-" *50)
@@ -435,62 +496,4 @@ def simulate_leaderboard(session_key):
 
         print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
 
-    print("-" *50)
-
-def fetch_session_info(session_key):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni sul CIRCUITO")
-    print("-" *50)
-
-    session_data = fetch_api_data("sessions", session_key = session_key)
-
-    if not session_data:
-        print("Nessun dato relativo alla sessione!")
-        return
-
-    packet = session_data[0]
-
-    circuit = packet.get("circuit_short_name", "N/A")
-    country = packet.get("country_name", "N/A")
-    session = packet.get("session_name", "N/A")
-    session_type = packet.get("session_type", "N/A")
-
-    session_registry = {
-        "circuit": circuit,
-        "country": country,
-        "session": session,
-        "session_type": session_type
-    }
-
-    print(f"| Circuito: {circuit} ({country}) | Sessione: {session} | Tipo: {session_type} |")
-    print("-" *50)
-
-    return session_registry
-
-def simulate_radio(session_key, driver_number):
-    print("\n")
-    print("-" *50)
-    print(f"Live RADIO")
-    print("-" *50)
-
-    radio_data = fetch_api_data("team_radio", session_key=session_key, driver_number=driver_number)
-
-    if not radio_data:
-        print("Nessun dato relativo alle comunicazioni radio!")
-        return
-
-    prev_timestamp = None
-
-    for packet in radio_data:
-        recording_url = packet.get("recording_url")
-        timestamp = packet.get("date")
-
-        if timestamp is None:
-            continue
-
-        prev_timestamp = sync_time(timestamp, prev_timestamp)
-
-        print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
-        
     print("-" *50)
