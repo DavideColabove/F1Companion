@@ -35,7 +35,7 @@ def main():
     # simulate_location(session_key=session, driver_number=pilot)
     # analyze_weather(session_key=session)
     # telemetry_thread.start()
-    # position_thread.start()
+    position_thread.start()
     # weather_thread.start()
     # intervals_thread.start()
     # laps_thread.start()
@@ -43,7 +43,7 @@ def main():
     # fetch_driver_info(session_key=session)
     # fetch_stints_info(session_key=session, driver_number=pilot)
     # leaderboard_thread.start()
-    fetch_session_info(session_key=session)
+    # fetch_session_info(session_key=session)
 
 if __name__ == "__main__":
     try:

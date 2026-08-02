@@ -3,7 +3,8 @@ import requests
 import time
 import sys
 from Utils import (sync_time,
-                   fetch_api_data)
+                   fetch_api_data,
+                   calculate_yaw)
 
 def get_driver_laps(session_key, driver_number):
     print("\n")
@@ -197,9 +198,13 @@ def simulate_location(session_key, driver_number):
 
     prev_timestamp = None
 
+    prev_y = None   # NECESSARY: yaw calculation
+    prev_x = None
+
     for packet in location_data:
         x_coordinate = packet.get("x")
         y_coordinate = packet.get("y")
+        yaw = calculate_yaw(x_coordinate, y_coordinate, prev_x, prev_y)
         z_coordinate = packet.get("z")
         timestamp = packet.get("date")
 
@@ -208,10 +213,13 @@ def simulate_location(session_key, driver_number):
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
 
-        location_stream = f"| Asse X: {x_coordinate:8.0f} | Asse Y: {y_coordinate:8.0f} | Asse Z: {z_coordinate:8.0f} |"
+        location_stream = f"| Asse X: {x_coordinate:8.0f} | Asse Y: {y_coordinate:8.0f} | Asse Z: {z_coordinate:8.0f} | YAW: {yaw:7.2f}° |"
 
         sys.stdout.write('\r' + location_stream)
         sys.stdout.flush()
+
+        prev_x = x_coordinate
+        prev_y = y_coordinate
 
     print("-" *50)
 
@@ -459,3 +467,4 @@ def fetch_session_info(session_key):
     print("-" *50)
 
     return session_registry
+
