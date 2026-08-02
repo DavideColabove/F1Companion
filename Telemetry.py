@@ -239,7 +239,7 @@ def simulate_radio(session_key, driver_number, udp_client):
             "timestamp": timestamp
         }
 
-        udp_client.send_data("radio_communications", radio_packet)
+        udp_client.send_data("radio_comms_data", radio_packet)
 
         print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
         
