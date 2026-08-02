@@ -464,9 +464,6 @@ def simulate_laps(session_key, driver_number, udp_client):
         is_personal_best = packet.get("is_personal_best")
         timestamp = packet.get("date_start")
 
-        if timestamp is None:
-            continue
-
         prev_timestamp = sync_time(timestamp, prev_timestamp)
 
         lap_duration = lap_duration if lap_duration is not None else "N/A"
