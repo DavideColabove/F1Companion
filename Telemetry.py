@@ -198,7 +198,7 @@ def simulate_location(session_key, driver_number):
 
     prev_timestamp = None
 
-    prev_y = None   # NECESSARY: yaw calculation
+    prev_y = None   # Necessari per calculare YAW
     prev_x = None
 
     for packet in location_data:
@@ -429,7 +429,7 @@ def simulate_leaderboard(session_key):
         timestamp = packet.get("date")
 
         if timestamp is None:
-                continue
+            continue
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
 
@@ -468,3 +468,29 @@ def fetch_session_info(session_key):
 
     return session_registry
 
+def simulate_radio(session_key, driver_number):
+    print("\n")
+    print("-" *50)
+    print(f"Live RADIO")
+    print("-" *50)
+
+    radio_data = fetch_api_data("team_radio", session_key=session_key, driver_number=driver_number)
+
+    if not radio_data:
+        print("Nessun dato relativo alle comunicazioni radio!")
+        return
+
+    prev_timestamp = None
+
+    for packet in radio_data:
+        recording_url = packet.get("recording_url")
+        timestamp = packet.get("date")
+
+        if timestamp is None:
+            continue
+
+        prev_timestamp = sync_time(timestamp, prev_timestamp)
+
+        print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
+        
+    print("-" *50)

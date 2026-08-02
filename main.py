@@ -12,7 +12,8 @@ from Telemetry import (
     fetch_driver_info,
     fetch_stints_info,
     simulate_leaderboard,
-    fetch_session_info
+    fetch_session_info,
+    simulate_radio
 )
 
 def main():
@@ -26,6 +27,7 @@ def main():
     laps_thread = threading.Thread(target=simulate_laps, args=(session, pilot))
     race_control_thread = threading.Thread(target=simulate_race_control, args=(session,))
     leaderboard_thread = threading.Thread(target=simulate_leaderboard, args=(session,))
+    radio_thread = threading.Thread(target=simulate_radio, args=(session,pilot))
     
     
     # get_driver_laps(session_key=session, driver_number=pilot)
@@ -35,7 +37,6 @@ def main():
     # simulate_location(session_key=session, driver_number=pilot)
     # analyze_weather(session_key=session)
     # telemetry_thread.start()
-    position_thread.start()
     # weather_thread.start()
     # intervals_thread.start()
     # laps_thread.start()
@@ -44,6 +45,7 @@ def main():
     # fetch_stints_info(session_key=session, driver_number=pilot)
     # leaderboard_thread.start()
     # fetch_session_info(session_key=session)
+    radio_thread.start()
 
 if __name__ == "__main__":
     try:
