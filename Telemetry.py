@@ -6,7 +6,6 @@ from Utils import (sync_time,
                    fetch_api_data,
                    calculate_yaw)
 
-
 # Funzioni dati storici
 def analyze_driver_laps(session_key, driver_number):
     print("\n")
@@ -333,6 +332,19 @@ def simulate_weather(session_key, udp_client):
             if track_temp < min_temp:
                 min_temp = track_temp
 
+        weather_packet = {
+            "air_temp": air_temp,
+            "track_temp": track_temp,
+            "humidity": humidity,
+            "rainfall": rainfall,
+            "timestamp": timestamp,
+            "wind_speed": wind_speed,
+            "wind_dir": wind_dir,
+            "pressure": pressure
+        }
+
+        udp_client.send_data("weather_data", weather_packet)
+
         weather_stream = f"| Aria: {air_temp}°C | Asf: {track_temp}°C | Pioggia: {wet} | Vento: {wind_speed}m/s ({wind_dir}°) | Press: {pressure}mbar |"
 
         sys.stdout.write('\r' + weather_stream)
@@ -369,6 +381,16 @@ def simulate_location(session_key, driver_number, udp_client):
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
 
+        location_packet = {
+            "x_coordinate": x_coordinate,
+            "y_coordinate": y_coordinate,
+            "yaw": yaw,
+            "z_coordinate": z_coordinate,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("location_data", location_packet)
+
         location_stream = f"| Asse X: {x_coordinate:8.0f} | Asse Y: {y_coordinate:8.0f} | Asse Z: {z_coordinate:8.0f} | YAW: {yaw:7.2f}° |"
 
         sys.stdout.write('\r' + location_stream)
@@ -402,6 +424,14 @@ def simulate_intervals(session_key, driver_number, udp_client):
             continue
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
+
+        intervals_packet = {
+            "leader_gap": leader_gap,
+            "interval": interval,
+            "timestamp":timestamp
+        }
+
+        udp_client.send_data("intervals_data", intervals_packet)
 
         intervals_stream = f"| Gap Leader: +{leader_gap}s | Gap Precedente: +{interval}s |"
 
@@ -444,6 +474,18 @@ def simulate_laps(session_key, driver_number, udp_client):
         sec2 = sec2 if sec2 is not None else "N/A"
         sec3 = sec3 if sec3 is not None else "N/A"
 
+        laps_packet = {
+            "lap_number": lap_number,
+            "sec1": sec1,
+            "sec2": sec2,
+            "sec3": sec3,
+            "lap_duration": lap_duration,
+            "is_personal_best": is_personal_best,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("laps_data", laps_packet)
+
         pb_text = " (MIGLIOR GIRO PERSONALE!)" if is_personal_best else ""
         laps_stream = f"| Giro: {lap_number} | T1: {sec1} | T2: {sec2} | T3: {sec3} | Totale: {lap_duration}{pb_text} |"
 
@@ -481,6 +523,15 @@ def simulate_race_control(session_key, udp_client):
         flag = flag if flag is not None else "N/A"
         message = message if message is not None else "N/A"
 
+        race_control_packet = {
+            "category": category,
+            "flag": flag,
+            "message": message,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("race_control_data", race_control_packet)
+
         race_control_stream = f"| [Race Control - {category}] Bandiera: {flag} | Trascrizione: {message} |"
 
         sys.stdout.write('\r' + race_control_stream)
@@ -511,6 +562,14 @@ def simulate_leaderboard(session_key, udp_client):
             continue
 
         prev_timestamp = sync_time(timestamp, prev_timestamp)
+
+        leaderboard_packet = {
+            "driver_number": driver_number,
+            "position" : position,
+            "timestamp": timestamp
+        }
+
+        udp_client.send_data("leaderboard_data", leaderboard_packet)
 
         print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
 
