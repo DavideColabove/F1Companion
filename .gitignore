@@ -1,0 +1,14 @@
+# --- PYTHON ---
+__pycache__/
+*.pyc
+telemetry_backend.log
+
+# --- UNREAL ENGINE ---
+F1Companion/Binaries/
+F1Companion/Intermediate/
+F1Companion/Saved/
+F1Companion/DerivedDataCache/
+F1Companion/.vs/
+F1Companion/.idea/
+F1Companion/*.sln
+F1Companion/*.suo
