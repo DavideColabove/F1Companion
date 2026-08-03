@@ -61,7 +61,15 @@ class UdpClient:
                 "driver_number": int,
                 "position" : int,
                 "timestamp": (str, type(None))
-            }
+            },
+            "session_info": {
+                "circuit": (str, type(None)),
+                "country": (str, type(None)),
+                "session": (str, type(None)),
+                "session_type": (str, type(None))
+            },
+            "driver_info": dict,
+            "stints_info": dict,
         }
 
     def send_data(self, packet_id, data):
@@ -80,6 +88,12 @@ class UdpClient:
         scheme = self.schemas.get(packet_id)
 
         if scheme is None:          # Temporaneo finche non definiamo tutti gli schemi
+            return True
+
+        if isinstance(scheme, type):
+            if not isinstance(data, scheme):
+                print(f"[SECURITY] Pacchetto '{packet_id}' SCARTATO. L'intero payload doveva essere di tipo {scheme}, ricevuto {type(data)}")
+                return False
             return True
 
         for key, expected_type in scheme.items():
