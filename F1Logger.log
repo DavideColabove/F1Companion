@@ -1,0 +1,70 @@
+2026-08-03 19:23:54,537 - INFO - 
+2026-08-03 19:23:54,537 - INFO - --------------------------------------------------
+2026-08-03 19:23:54,537 - INFO - Informazioni sui PILOTI
+2026-08-03 19:23:54,537 - INFO - --------------------------------------------------
+2026-08-03 19:23:55,067 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-03 19:23:55,067 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-03 19:23:55,067 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-03 19:23:55,067 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-03 19:23:55,067 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-03 19:23:55,068 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-03 19:23:55,068 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-03 19:23:55,068 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-03 19:23:55,068 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-03 19:23:55,068 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-03 19:23:55,068 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-03 19:23:55,069 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-03 19:23:55,069 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-03 19:23:55,069 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-03 19:23:55,069 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-03 19:23:55,069 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-03 19:23:55,069 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-03 19:23:55,069 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-03 19:23:55,069 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-03 19:23:55,070 - INFO - 
+2026-08-03 19:23:55,070 - INFO - --------------------------------------------------
+2026-08-03 19:23:55,070 - INFO - Informazioni sul CIRCUITO
+2026-08-03 19:23:55,070 - INFO - --------------------------------------------------
+2026-08-03 19:23:55,661 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-03 19:23:55,661 - INFO - --------------------------------------------------
+2026-08-03 19:23:55,661 - INFO - 
+2026-08-03 19:23:55,661 - INFO - --------------------------------------------------
+2026-08-03 19:23:55,661 - INFO - Informazioni GOMME
+2026-08-03 19:23:55,662 - INFO - --------------------------------------------------
+2026-08-03 19:23:56,206 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-03 19:23:56,206 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-03 19:25:27,115 - INFO - 
+2026-08-03 19:25:27,115 - INFO - --------------------------------------------------
+2026-08-03 19:25:27,115 - INFO - Informazioni sui PILOTI
+2026-08-03 19:25:27,115 - INFO - --------------------------------------------------
+2026-08-03 19:25:27,711 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-03 19:25:27,711 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-03 19:25:27,711 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-03 19:25:27,711 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-03 19:25:27,711 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-03 19:25:27,712 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-03 19:25:27,712 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-03 19:25:27,712 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-03 19:25:27,712 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-03 19:25:27,712 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-03 19:25:27,712 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-03 19:25:27,712 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-03 19:25:27,713 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-03 19:25:27,713 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-03 19:25:27,713 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-03 19:25:27,713 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-03 19:25:27,713 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-03 19:25:27,713 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-03 19:25:27,713 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-03 19:25:27,714 - INFO - 
+2026-08-03 19:25:27,714 - INFO - --------------------------------------------------
+2026-08-03 19:25:27,714 - INFO - Informazioni sul CIRCUITO
+2026-08-03 19:25:27,714 - INFO - --------------------------------------------------
+2026-08-03 19:25:28,279 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-03 19:25:28,280 - INFO - --------------------------------------------------
+2026-08-03 19:25:28,280 - INFO - 
+2026-08-03 19:25:28,280 - INFO - --------------------------------------------------
+2026-08-03 19:25:28,280 - INFO - Informazioni GOMME
+2026-08-03 19:25:28,281 - INFO - --------------------------------------------------
+2026-08-03 19:25:28,827 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-03 19:25:28,827 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |

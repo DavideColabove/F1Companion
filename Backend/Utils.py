@@ -2,6 +2,7 @@ from datetime import datetime
 import time
 import requests
 import math
+from Logger import logger
 
 BASE_URL = "https://api.openf1.org/v1"
 HEADERS = {
@@ -29,20 +30,20 @@ def fetch_api_data(endpoint, **parameters): # delego la raccolta da API alla fun
         response = requests.get(url, params=parameters, headers=HEADERS)
 
         if response.status_code == 401:
-            print(f"Errore 401 sull'endpoint /{endpoint}: Sessione Live in corso. Riprova a fine gara!")
+            logger.error(f"Errore 401 sull'endpoint /{endpoint}: Sessione Live in corso. Riprova a fine gara!")
             return None
 
         response.raise_for_status()
         data = response.json()
 
         if not data:
-            print(f"Nessun dato trovato per l'endpoint /{endpoint}!")
+            logger.warning(f"Nessun dato trovato per l'endpoint /{endpoint}!")
             return None
 
         return data
 
     except requests.exceptions.RequestException as e:
-        print(f"Errore di comunicazione con le API (/{endpoint}): {e}")
+        logger.error(f"Errore di comunicazione con le API (/{endpoint}): {e}")
         return None
 
 def calculate_yaw(curr_x, curr_y, prev_x, prev_y):  # calcolo il vettore di rotazione per le vetture

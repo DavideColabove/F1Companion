@@ -1,7 +1,12 @@
 # --- PYTHON ---
 __pycache__/
 *.pyc
+*.pyo
 telemetry_backend.log
+f1companion.log
+
+# Cache FastF1 (dati storici scaricati)
+f1_cache/
 
 # --- UNREAL ENGINE ---
 F1Companion/Binaries/

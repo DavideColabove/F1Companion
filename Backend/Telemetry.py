@@ -1,3 +1,4 @@
+from Logger import logger
 from datetime import datetime
 import requests
 import time
@@ -8,40 +9,40 @@ from Utils import (sync_time,
 
 # Funzioni dati storici
 def analyze_driver_laps(session_key, driver_number):
-    print("\n")
-    print("-" *50)
-    print(f"Dati GIRI")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Dati GIRI")
+    logger.info("-" *50)
 
     laps_data = fetch_api_data("laps", session_key=session_key, driver_number=driver_number)
 
     if not laps_data:
-        print(f"\nNessun dato trovato con questi parametri. Verifica l'ID sessione!")
+        logger.warning(f"Nessun dato trovato con questi parametri. Verifica l'ID sessione!")
         return
 
-    print("\n") 
-    print("-" *50)
-    print(f"Tempo PER giro")
-    print("-" *50)
+    logger.info("") 
+    logger.info("-" *50)
+    logger.info(f"Tempo PER giro")
+    logger.info("-" *50)
 
     for lap in laps_data[:20]:
         lap_number = lap.get("lap_number", "N/D")
         lap_seconds = lap.get("lap_duration","N/D")
 
-        print(f"Giro: {lap_number} | Tempo: {lap_seconds} secondi")
+        logger.info(f"Giro: {lap_number} | Tempo: {lap_seconds} secondi")
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def analyze_max_speed(session_key, driver_number): 
-    print("\n")
-    print("-" *50)
-    print(f"MAX Speed")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"MAX Speed")
+    logger.info("-" *50)
 
     telemetry_data = fetch_api_data("car_data", session_key=session_key, driver_number=driver_number)
 
     if not telemetry_data:
-        print("Nessun dato di telemetria!")
+        logger.warning("Nessun dato di telemetria!")
         return
 
     max_speed = 0
@@ -54,37 +55,37 @@ def analyze_max_speed(session_key, driver_number):
             max_speed = current_speed
             peak_details = packet
 
-    print("\n")
-    print("-" *50)
-    print(f"Velocità MASSIMA registrata: {max_speed} km/h")
-    print("-" *50)
-    print("Dettagli dell'auto in quel momento esatto:")
-    print(f"1. Marcia inserita: {peak_details.get('n_gear')}")
-    print(f"2. Giri motore (RPM): {peak_details.get('rpm')}")
-    print(f"3. Acceleratore: {peak_details.get('throttle')}%")
-    print(f"4. Freno premuto: {'Sì' if peak_details.get('brake') > 0 else 'No'}")
-    print(f"5. DRS Aperto: {'Sì' if peak_details.get('drs') in [10, 12, 14] else 'No'}")
-    print("-" * 50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Velocità MASSIMA registrata: {max_speed} km/h")
+    logger.info("-" *50)
+    logger.info("Dettagli dell'auto in quel momento esatto:")
+    logger.info(f"1. Marcia inserita: {peak_details.get('n_gear')}")
+    logger.info(f"2. Giri motore (RPM): {peak_details.get('rpm')}")
+    logger.info(f"3. Acceleratore: {peak_details.get('throttle')}%")
+    logger.info(f"4. Freno premuto: {'Sì' if peak_details.get('brake') > 0 else 'No'}")
+    logger.info(f"5. DRS Aperto: {'Sì' if peak_details.get('drs') in [10, 12, 14] else 'No'}")
+    logger.info("-" * 50)
 
 def analyze_pit_stop(session_key, driver_number):
-    print("\n")
-    print("-" *50)
-    print(f"Dati PIT")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Dati PIT")
+    logger.info("-" *50)
 
     pit_data = fetch_api_data("pit", session_key=session_key, driver_number=driver_number)
 
     if not pit_data:
-        print("Nessun dato relativo ai pit stop!")
+        logger.warning("Nessun dato relativo ai pit stop!")
         return
 
-    print("\n")
-    print("-" *50)
-    print(f"Dati PIT stop")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Dati PIT stop")
+    logger.info("-" *50)
 
     pit_stop_counter = len(pit_data)
-    print(f"Il pilota ha effettuato {pit_stop_counter} pit stop.")
+    logger.info(f"Il pilota ha effettuato {pit_stop_counter} pit stop.")
 
 
     fastest_pit = float('inf')
@@ -95,23 +96,23 @@ def analyze_pit_stop(session_key, driver_number):
                 fastest_pit = current
 
     if fastest_pit == float('inf'):
-        print("Nessun tempo valido registrato per i pit stop.")
+        logger.warning("Nessun tempo valido registrato per i pit stop.")
     else:
-        print(f"Il pit stop più veloce è durato {fastest_pit} secondi.")
+        logger.info(f"Il pit stop più veloce è durato {fastest_pit} secondi.")
 
-    print("-" *50)
+    logger.info("-" *50)
 
 # Funzioni non-Threaded
 def fetch_driver_info(session_key):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni sui PILOTI")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Informazioni sui PILOTI")
+    logger.info("-" *50)
 
     driver_data = fetch_api_data("drivers", session_key=session_key)
 
     if not driver_data:
-        print("Nessun dato relativo ai piloti!")
+        logger.warning("Nessun dato relativo ai piloti!")
         return
 
     driver_registry = {}
@@ -136,20 +137,20 @@ def fetch_driver_info(session_key):
             "team_colour": team_colour
         }
 
-        print(f"\nAuto: #{driver_number}| {name_acronym} | {full_name} | Colore: {team_colour} |")
+        logger.info(f"Auto: #{driver_number}| {name_acronym} | {full_name} | Colore: {team_colour} |")
 
     return driver_registry
 
 def fetch_stints_info(session_key, driver_number):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni GOMME")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Informazioni GOMME")
+    logger.info("-" *50)
 
     stints_data = fetch_api_data("stints", session_key=session_key, driver_number=driver_number)
 
     if not stints_data:
-        print("Nessun dato relativo agli eventi di gara!")
+        logger.warning("Nessun dato relativo agli eventi di gara!")
         return        
 
     stints_registry = {}
@@ -175,20 +176,20 @@ def fetch_stints_info(session_key, driver_number):
             "tyre_age_at_start": tyre_age_at_start
         }
 
-        print(f"\nNumero stint: #{stint_number}| Mescola: {compound} | Gomme usate: {tyre_age_at_start} | Giro iniziale: {lap_start} | Giro finale: {lap_end} |")
+        logger.info(f"Numero stint: #{stint_number}| Mescola: {compound} | Gomme usate: {tyre_age_at_start} | Giro iniziale: {lap_start} | Giro finale: {lap_end} |")
 
     return stints_registry
 
 def fetch_session_info(session_key):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni sul CIRCUITO")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Informazioni sul CIRCUITO")
+    logger.info("-" *50)
 
     session_data = fetch_api_data("sessions", session_key = session_key)
 
     if not session_data:
-        print("Nessun dato relativo alla sessione!")
+        logger.warning("Nessun dato relativo alla sessione!")
         return
 
     packet = session_data[0]
@@ -205,22 +206,22 @@ def fetch_session_info(session_key):
         "session_type": session_type
     }
 
-    print(f"| Circuito: {circuit} ({country}) | Sessione: {session} | Tipo: {session_type} |")
-    print("-" *50)
+    logger.info(f"| Circuito: {circuit} ({country}) | Sessione: {session} | Tipo: {session_type} |")
+    logger.info("-" *50)
 
     return session_registry
 
 # Funzioni Threaded
 def simulate_radio(session_key, driver_number, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Live RADIO")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Live RADIO")
+    logger.info("-" *50)
 
     radio_data = fetch_api_data("team_radio", session_key=session_key, driver_number=driver_number)
 
     if not radio_data:
-        print("Nessun dato relativo alle comunicazioni radio!")
+        logger.warning("Nessun dato relativo alle comunicazioni radio!")
         return
 
     prev_timestamp = None
@@ -241,20 +242,20 @@ def simulate_radio(session_key, driver_number, udp_client):
 
         udp_client.send_data("radio_comms_data", radio_packet)
 
-        print(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
+        logger.info(f"| Timestamp {timestamp} | Recording URL {recording_url} |")
         
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_dashboard(session_key, driver_number, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Dashboard IRT")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Dashboard IRT")
+    logger.info("-" *50)
 
     car_data = fetch_api_data("car_data", session_key=session_key, driver_number=driver_number)
 
     if not car_data:
-        print("Nessun dato relativo alla velocità!")
+        logger.warning("Nessun dato relativo alla velocità!")
         return
 
     prev_timestamp = None
@@ -288,18 +289,18 @@ def simulate_dashboard(session_key, driver_number, udp_client):
         sys.stdout.write('\r' + dashboard_stream)
         sys.stdout.flush()
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_weather(session_key, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Condizioni METEO real-time")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Condizioni METEO real-time")
+    logger.info("-" *50)
 
     weather_data = fetch_api_data("weather", session_key=session_key)
 
     if not weather_data:
-        print("Nessun dato relativo al meteo!")
+        logger.warning("Nessun dato relativo al meteo!")
         return 
 
     max_temp = 0
@@ -350,18 +351,18 @@ def simulate_weather(session_key, udp_client):
         sys.stdout.write('\r' + weather_stream)
         sys.stdout.flush()
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_location(session_key, driver_number, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Coordinate X,Y,Z")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Coordinate X,Y,Z")
+    logger.info("-" *50)
 
     location_data = fetch_api_data("location", session_key=session_key, driver_number=driver_number)
 
     if not location_data:
-        print("Nessun dato relativo alla posizione!")
+        logger.warning("Nessun dato relativo alla posizione!")
         return
 
     prev_timestamp = None
@@ -399,18 +400,18 @@ def simulate_location(session_key, driver_number, udp_client):
         prev_x = x_coordinate
         prev_y = y_coordinate
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_intervals(session_key, driver_number, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Intervallo dal PRIMO e PRECEDENTE")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Intervallo dal PRIMO e PRECEDENTE")
+    logger.info("-" *50)
 
     gaps_data = fetch_api_data("intervals", session_key=session_key, driver_number=driver_number)
 
     if not gaps_data:
-        print("Nessun dato relativo agli intervalli!")
+        logger.warning("Nessun dato relativo agli intervalli!")
         return 
 
     prev_timestamp = None
@@ -438,19 +439,19 @@ def simulate_intervals(session_key, driver_number, udp_client):
         sys.stdout.write('\r' + intervals_stream)
         sys.stdout.flush()
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_laps(session_key, driver_number, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Dati del GIRO")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Dati del GIRO")
+    logger.info("-" *50)
 
     
     laps_data = fetch_api_data("laps", session_key=session_key, driver_number = driver_number)
 
     if not laps_data:
-        print("Nessun dato relativo ai giri!")
+        logger.warning("Nessun dato relativo ai giri!")
         return
 
     prev_timestamp = None
@@ -489,18 +490,18 @@ def simulate_laps(session_key, driver_number, udp_client):
         sys.stdout.write('\r' + laps_stream)
         sys.stdout.flush()
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_race_control(session_key, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Informazioni di RACE CONTROL")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Informazioni di RACE CONTROL")
+    logger.info("-" *50)
 
     race_control_data = fetch_api_data("race_control", session_key=session_key)
 
     if not race_control_data:
-        print("Nessun dato relativo agli eventi di gara!")
+        logger.warning("Nessun dato relativo agli eventi di gara!")
         return
 
     prev_timestamp = None
@@ -534,18 +535,18 @@ def simulate_race_control(session_key, udp_client):
         sys.stdout.write('\r' + race_control_stream)
         sys.stdout.flush()
 
-    print("-" *50)
+    logger.info("-" *50)
 
 def simulate_leaderboard(session_key, udp_client):
-    print("\n")
-    print("-" *50)
-    print(f"Live LEADERBOARD")
-    print("-" *50)
+    logger.info("")
+    logger.info("-" *50)
+    logger.info(f"Live LEADERBOARD")
+    logger.info("-" *50)
 
     leaderboard_data = fetch_api_data("position", session_key=session_key)
 
     if not leaderboard_data:
-        print("Nessun dato relativo alla leaderboard!")
+        logger.warning("Nessun dato relativo alla leaderboard!")
         return
 
     prev_timestamp = None
@@ -568,6 +569,6 @@ def simulate_leaderboard(session_key, udp_client):
 
         udp_client.send_data("leaderboard_data", leaderboard_packet)
 
-        print(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
+        logger.info(f"| [LEADERBOARD] Auto #{driver_number} è ora in P{position} |")
 
-    print("-" *50)
+    logger.info("-" *50)
