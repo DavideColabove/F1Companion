@@ -1,5 +1,7 @@
 import threading
+import time
 from Network import UdpClient
+from Logger import logger
 from Telemetry import (
     analyze_driver_laps, 
     analyze_max_speed, 
@@ -47,4 +49,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n Programma terminato")
+        logger.info("Programma terminato")

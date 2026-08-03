@@ -1,5 +1,6 @@
 import socket
 import json
+from Logger import logger
 
 class UdpClient:
     def __init__(self, IP="127.0.0.1",port=5555):
@@ -92,13 +93,13 @@ class UdpClient:
 
         if isinstance(scheme, type):
             if not isinstance(data, scheme):
-                print(f"[SECURITY] Pacchetto '{packet_id}' SCARTATO. L'intero payload doveva essere di tipo {scheme}, ricevuto {type(data)}")
+                logger.warning(f"[SECURITY] Pacchetto '{packet_id}' SCARTATO. L'intero payload doveva essere di tipo {scheme}, ricevuto {type(data)}")
                 return False
             return True
 
         for key, expected_type in scheme.items():
             value = data.get(key)
             if not isinstance(value,expected_type):
-                print(f"[SECURITY] Pacchetto '{packet_id}' SCARTATO. Chiave '{key}' errata: {value} (Ricevuto: {type(value)}, Atteso: {expected_type})")
+                logger.warning(f"[SECURITY] Pacchetto '{packet_id}' SCARTATO. Chiave '{key}' errata: {value} (Ricevuto: {type(value)}, Atteso: {expected_type})")
                 return False 
         return True
