@@ -4,6 +4,7 @@ __pycache__/
 *.pyo
 telemetry_backend.log
 f1companion.log
+F1Logger.log
 
 # Cache FastF1 (dati storici scaricati)
 f1_cache/
@@ -12,8 +13,12 @@ f1_cache/
 F1Companion/Binaries/
 F1Companion/Intermediate/
 F1Companion/Saved/
+F1Companion/Build/
 F1Companion/DerivedDataCache/
 F1Companion/.vs/
 F1Companion/.idea/
 F1Companion/*.sln
 F1Companion/*.suo
+
+
+.vscode/

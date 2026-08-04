@@ -49,33 +49,39 @@ void UTelemetryManager::ReceiveUDPData()
 
 		if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
 		{
-			int32 TempGear;
-			if (JsonObject->TryGetNumberField(TEXT("gear_number"), TempGear))
-				CurrentTelemetry.Gear = TempGear;
+			const TSharedPtr<FJsonObject>* DataObjectPtr;
+			if (JsonObject->TryGetObjectField(TEXT("data"), DataObjectPtr))
+			{
+				TSharedPtr<FJsonObject> DataObject = *DataObjectPtr;
 
-			int32 TempRPM;
-			if (JsonObject->TryGetNumberField(TEXT("rpm"), TempRPM))
-				CurrentTelemetry.RPM = TempRPM;
+				int32 TempGear;
+				if (DataObject->TryGetNumberField(TEXT("gear_number"), TempGear))
+					CurrentTelemetry.Gear = TempGear;
 
-			double TempSpeed;
-			if (JsonObject->TryGetNumberField(TEXT("speed"), TempSpeed))
-				CurrentTelemetry.Speed = TempSpeed;
+				int32 TempRPM;
+				if (DataObject->TryGetNumberField(TEXT("rpm"), TempRPM))
+					CurrentTelemetry.RPM = TempRPM;
 
-			int32 TempThrottle;
-			if (JsonObject->TryGetNumberField(TEXT("throttle"), TempThrottle))
-				CurrentTelemetry.Throttle = TempThrottle;
+				double TempSpeed;
+				if (DataObject->TryGetNumberField(TEXT("speed"), TempSpeed))
+					CurrentTelemetry.Speed = TempSpeed;
 
-			double TempBrake;
-			if (JsonObject->TryGetNumberField(TEXT("brake"), TempBrake))
-				CurrentTelemetry.Brake = TempBrake;
+				int32 TempThrottle;
+				if (DataObject->TryGetNumberField(TEXT("throttle"), TempThrottle))
+					CurrentTelemetry.Throttle = TempThrottle;
 
-			int32 TempDrs;
-			if (JsonObject->TryGetNumberField(TEXT("drs"), TempDrs))
-				CurrentTelemetry.Drs = TempDrs;
+				double TempBrake;
+				if (DataObject->TryGetNumberField(TEXT("brake"), TempBrake))
+					CurrentTelemetry.Brake = TempBrake;
 
-			FString TempTimestamp;
-			if (JsonObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
-				CurrentTelemetry.Timestamp = TempTimestamp;
+				int32 TempDrs;
+				if (DataObject->TryGetNumberField(TEXT("drs"), TempDrs))
+					CurrentTelemetry.Drs = TempDrs;
+
+				FString TempTimestamp;
+				if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+					CurrentTelemetry.Timestamp = TempTimestamp;
+			}
 		}
 
 		if (GEngine)
