@@ -266,6 +266,7 @@ def simulate_dashboard(session_key, driver_number, udp_client):
         rpm = packet.get("rpm",0)
         throttle = packet.get("throttle",0)
         brake = packet.get("brake",0)
+        drs = packet.get("drs",0)
         timestamp = packet.get("date")
 
         if speed == 0 or timestamp is None:
@@ -279,6 +280,7 @@ def simulate_dashboard(session_key, driver_number, udp_client):
             "rpm": rpm,
             "throttle": throttle,
             "brake": brake,
+            "drs":drs,
             "timestamp": timestamp
         }
 

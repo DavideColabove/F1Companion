@@ -15,6 +15,7 @@ class UdpClient:
             "rpm": int,
             "throttle": int,
             "brake": (int, float),
+            "drs": int,
             "timestamp": (str, type(None))
             },
             "radio_comms_data":{

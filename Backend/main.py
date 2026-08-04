@@ -45,6 +45,8 @@ def main():
     leaderboard_thread = threading.Thread(target=simulate_leaderboard, args=(session,udp_client))
     radio_thread = threading.Thread(target=simulate_radio, args=(session,pilot,udp_client))
 
+    telemetry_thread.start()
+
 if __name__ == "__main__":
     try:
         main()
