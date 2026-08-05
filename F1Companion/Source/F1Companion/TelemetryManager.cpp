@@ -76,11 +76,11 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		{
 			HandleDashboardData(DataObject);
 		}
-		else if (PacketId == TEXT("weather_data")) 
+		else if (PacketId == TEXT("weather_data"))
 		{
 			HandleWeatherData(DataObject);
 		}
-		else if (PacketId == TEXT("radio_comms_data"))
+		/*else if (PacketId == TEXT("radio_comms_data"))
 		{
 			HandleRadioCommsData(DataObject);
 		}
@@ -103,7 +103,7 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		else if (PacketId == TEXT("leaderboard_data"))
 		{
 			HandleLeaderboardData(DataObject);
-		}
+		}*/
 	}
 }
 
@@ -136,4 +136,70 @@ void UTelemetryManager::HandleDashboardData(const TSharedPtr<FJsonObject>& DataO
 	FString TempTimestamp;
 	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
 		CurrentTelemetry.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleWeatherData(const TSharedPtr<FJsonObject>& DataObject) {
+	double TempAirTemp;
+	if (DataObject->TryGetNumberField((TEXT("air_temp")), TempAirTemp))
+		CurrentWeather.Air_Temp = TempAirTemp;
+
+	double TempTrackTemp;
+	if (DataObject->TryGetNumberField((TEXT("track_temp")), TempTrackTemp))
+		CurrentWeather.Track_Temp = TempTrackTemp;
+
+	double TempHumidity;
+	if (DataObject->TryGetNumberField((TEXT("humidity")), TempHumidity))
+		CurrentWeather.Humidity = TempHumidity;
+
+	double TempRainfall;
+	if (DataObject->TryGetNumberField((TEXT("rainfall")), TempRainfall))
+		CurrentWeather.Rainfall = TempRainfall;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentWeather.Timestamp = TempTimestamp;
+
+	float TempWindSpeed;
+	if (DataObject->TryGetNumberField((TEXT("wind_speed")), TempWindSpeed))
+		CurrentWeather.Wind_Speed = TempWindSpeed;
+
+	double TempWindDir;
+	if (DataObject->TryGetNumberField((TEXT("wind_dir")), TempWindDir))
+		CurrentWeather.Wind_Direction = TempWindDir;
+
+	double TempPressure;
+	if (DataObject->TryGetNumberField((TEXT("pressure")), TempPressure))
+		CurrentWeather.Pressure = TempPressure;
+}
+
+void UTelemetryManager::HandleRadioCommsData(const TSharedPtr<FJsonObject>& DataObject){
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentRadio.Timestamp = TempTimestamp;
+
+	FString TempURL;
+	if (DataObject->TryGetStringField(TEXT("recording_url"), TempURL))
+		CurrentRadio.Radio_URL = TempTimestamp;
+}
+
+void UTelemetryManager::HandleLocationData(const TSharedPtr<FJsonObject>& DataObject) {
+	double TempX;
+	if (DataObject->TryGetNumberField((TEXT("x_coordinate")), TempX))
+		CurrentLocation.X_coor = TempX;
+
+	double TempY;
+	if (DataObject->TryGetNumberField((TEXT("y_coordinate")), TempY))
+		CurrentLocation.Y_coor = TempY;
+
+	double TempYAW;
+	if (DataObject->TryGetNumberField((TEXT("yaw")), TempYAW))
+		CurrentLocation.YAW = TempYAW;
+
+	double TempZ;
+	if (DataObject->TryGetNumberField((TEXT("z_coordinate")), TempZ))
+		CurrentLocation.Z_coor = TempZ;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentLocation.Timestamp = TempTimestamp;
 }

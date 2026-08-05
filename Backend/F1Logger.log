@@ -76,3 +76,42 @@
 2026-08-04 13:39:49,564 - INFO - --------------------------------------------------
 2026-08-04 13:39:49,564 - INFO - Dashboard IRT
 2026-08-04 13:39:49,564 - INFO - --------------------------------------------------
+2026-08-04 17:48:57,369 - INFO - 
+2026-08-04 17:48:57,370 - INFO - --------------------------------------------------
+2026-08-04 17:48:57,370 - INFO - Informazioni sui PILOTI
+2026-08-04 17:48:57,370 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,070 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-04 17:48:58,070 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-04 17:48:58,071 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-04 17:48:58,071 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-04 17:48:58,071 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-04 17:48:58,071 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-04 17:48:58,071 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-04 17:48:58,071 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-04 17:48:58,071 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-04 17:48:58,071 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-04 17:48:58,071 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-04 17:48:58,071 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-04 17:48:58,071 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-04 17:48:58,071 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-04 17:48:58,071 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-04 17:48:58,072 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-04 17:48:58,072 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-04 17:48:58,072 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-04 17:48:58,072 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-04 17:48:58,072 - INFO - 
+2026-08-04 17:48:58,072 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,072 - INFO - Informazioni sul CIRCUITO
+2026-08-04 17:48:58,072 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,493 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-04 17:48:58,493 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,493 - INFO - 
+2026-08-04 17:48:58,493 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,493 - INFO - Informazioni GOMME
+2026-08-04 17:48:58,493 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,918 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-04 17:48:58,918 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-04 17:48:58,923 - INFO - 
+2026-08-04 17:48:58,923 - INFO - --------------------------------------------------
+2026-08-04 17:48:58,923 - INFO - Dashboard IRT
+2026-08-04 17:48:58,924 - INFO - --------------------------------------------------
