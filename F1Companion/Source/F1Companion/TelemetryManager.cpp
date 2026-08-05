@@ -92,7 +92,7 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		{
 			HandleIntervalsData(DataObject);
 		}
-		/*else if (PacketId == TEXT("laps_data"))
+		else if (PacketId == TEXT("laps_data"))
 		{
 			HandleLapsData(DataObject);
 		}
@@ -103,7 +103,19 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		else if (PacketId == TEXT("leaderboard_data"))
 		{
 			HandleLeaderboardData(DataObject);
-		}*/
+		}
+		else if (PacketId == TEXT("session_info"))
+		{
+			HandleSessionInfoData(DataObject);
+		}
+		else if (PacketId == TEXT("driver_info"))
+		{
+			HandleDriverInfoData(DataObject);
+		}
+		else if (PacketId == TEXT("stints_info"))
+		{
+			HandleStintsInfoData(DataObject);
+		}
 	}
 }
 
@@ -247,4 +259,96 @@ void UTelemetryManager::HandleLapsData(const TSharedPtr<FJsonObject>& DataObject
 	FString TempTimestamp;
 	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
 		CurrentLap.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleRaceControlData(const TSharedPtr<FJsonObject>& DataObject) {
+	FString TempCategory;
+	if (DataObject->TryGetStringField(TEXT("category"), TempCategory))
+		CurrentControlData.Category = TempCategory;
+
+	FString TempFlag;
+	if (DataObject->TryGetStringField(TEXT("flag"), TempFlag))
+		CurrentControlData.Flag = TempFlag;
+
+	FString TempMessage;
+	if (DataObject->TryGetStringField(TEXT("message"), TempMessage))
+		CurrentControlData.Message = TempMessage;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentControlData.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleLeaderboardData(const TSharedPtr<FJsonObject>& DataObject){
+	int32 TempDriverNumber;
+	if (DataObject->TryGetNumberField(TEXT("driver_number"), TempDriverNumber))
+		CurrentLeaderboard.Driver_Number = TempDriverNumber;
+
+	int32 TempPosition;
+	if (DataObject->TryGetNumberField(TEXT("position"), TempPosition))
+		CurrentLeaderboard.Position = TempPosition;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentLeaderboard.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleSessionInfoData(const TSharedPtr<FJsonObject>& DataObject)
+{
+	DataObject->TryGetStringField(TEXT("circuit"), CurrentSessionInfo.Circuit);
+	DataObject->TryGetStringField(TEXT("country"), CurrentSessionInfo.Country);
+	DataObject->TryGetStringField(TEXT("session"), CurrentSessionInfo.Session);
+	DataObject->TryGetStringField(TEXT("session_type"), CurrentSessionInfo.SessionType);
+}
+
+void UTelemetryManager::HandleDriverInfoData(const TSharedPtr<FJsonObject>& DataObject)
+{
+	DriversRegistry.Empty(); 
+
+	for (auto& Elem : DataObject->Values)
+	{
+
+		int32 DriverNumber = FCString::Atoi(*Elem.Key);
+
+		const TSharedPtr<FJsonObject>* DriverObjPtr;
+		if (Elem.Value->TryGetObject(DriverObjPtr))
+		{
+			TSharedPtr<FJsonObject> DriverObj = *DriverObjPtr;
+			FDriverDetails Details;
+
+			DriverObj->TryGetStringField(TEXT("full_name"), Details.FullName);
+			DriverObj->TryGetStringField(TEXT("name_acronym"), Details.NameAcronym);
+			DriverObj->TryGetStringField(TEXT("team_colour"), Details.TeamColour);
+
+			DriversRegistry.Add(DriverNumber, Details);
+		}
+	}
+}
+
+void UTelemetryManager::HandleStintsInfoData(const TSharedPtr<FJsonObject>& DataObject)
+{
+	StintsRegistry.Empty();
+
+	for (auto& Elem : DataObject->Values)
+	{
+		int32 LapStart = FCString::Atoi(*Elem.Key);
+
+		const TSharedPtr<FJsonObject>* StintObjPtr;
+		if (Elem.Value->TryGetObject(StintObjPtr))
+		{
+			TSharedPtr<FJsonObject> StintObj = *StintObjPtr;
+			FStintDetails Details;
+
+			StintObj->TryGetStringField(TEXT("compound"), Details.Compound);
+			StintObj->TryGetNumberField(TEXT("tyre_age_at_start"), Details.TyreAgeAtStart);
+
+			TSharedPtr<FJsonValue> DurationVal = StintObj->TryGetField(TEXT("tyre_duration"));
+			if (DurationVal.IsValid())
+			{
+				Details.TyreDuration = DurationVal->AsString();
+			}
+
+			StintsRegistry.Add(LapStart, Details);
+		}
+	}
 }

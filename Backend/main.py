@@ -26,6 +26,8 @@ def main():
     udp_client = UdpClient()
 
     # Setup non-threaded
+    logger.info("Inviando pacchetti di SETUP INIZIALE via UDP...")
+    
     driver_registry = fetch_driver_info(session_key=session)
     udp_client.send_data("driver_info", driver_registry)
 
@@ -34,6 +36,9 @@ def main():
 
     stints_registry = fetch_stints_info(session_key=session, driver_number=pilot)
     udp_client.send_data("stints_info", stints_registry)
+
+    logger.info("Setup completato. Pausa per permettere a Unreal Engine di elaborare...")
+    time.sleep(2)
 
     # Creazione threads
     telemetry_thread = threading.Thread(target=simulate_dashboard, args=(session,pilot,udp_client))
@@ -45,7 +50,17 @@ def main():
     leaderboard_thread = threading.Thread(target=simulate_leaderboard, args=(session,udp_client))
     radio_thread = threading.Thread(target=simulate_radio, args=(session,pilot,udp_client))
 
+    logger.info("Avvio dei flussi di telemetria in tempo reale...")
+
+    # Avvio di tutti i threads
     telemetry_thread.start()
+    position_thread.start()
+    weather_thread.start()
+    intervals_thread.start()
+    laps_thread.start()
+    race_control_thread.start()
+    leaderboard_thread.start()
+    radio_thread.start()
 
 if __name__ == "__main__":
     try:

@@ -135,7 +135,81 @@ struct FLapData {
 	FString Timestamp = TEXT("");
 };
 	
+USTRUCT(BlueprintType)
+struct FRaceControlData{
+	GENERATED_BODY()
 
+	UPROPERTY(BlueprintReadOnly, Category = "Race_Control")
+	FString Category = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Race_Control")
+	FString Flag = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Race_Control")
+	FString Message = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Race_Control")
+	FString Timestamp = TEXT("");
+};
+
+USTRUCT(BlueprintType)
+struct FLeaderboardData {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Leaderboard")
+	int32 Driver_Number;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Leaderboard")
+	int32 Position;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Leaderboard")
+	FString Timestamp = TEXT("");
+};
+
+USTRUCT(BlueprintType)
+struct FSessionInfoData {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Session")
+	FString Circuit = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Session")
+	FString Country = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Session")
+	FString Session = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Session")
+	FString SessionType = TEXT("");
+};
+
+USTRUCT(BlueprintType)
+struct FDriverDetails {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Driver")
+	FString FullName = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Driver")
+	FString NameAcronym = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Driver")
+	FString TeamColour = TEXT("");
+};
+
+USTRUCT(BlueprintType)
+struct FStintDetails {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Stint")
+	FString Compound = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Stint")
+	FString TyreDuration = TEXT(""); // FString per supportare sia il numero che il testo "Fino a fine gara"
+
+	UPROPERTY(BlueprintReadOnly, Category = "Stint")
+	int32 TyreAgeAtStart = 0;
+};
 
 UCLASS()
 class F1COMPANION_API UTelemetryManager : public UGameInstance
@@ -145,6 +219,18 @@ public:
 	virtual void Init() override;
 	virtual void Shutdown() override;
 
+	// Oggetti per funzioni di setup
+	UPROPERTY(BlueprintReadOnly, Category = "Setup")
+	FSessionInfoData CurrentSessionInfo;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Setup")
+	TMap<int32, FDriverDetails> DriversRegistry;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Setup")
+	TMap<int32, FStintDetails> StintsRegistry;
+
+
+	// Oggetti per funzioni live
 	UPROPERTY(BlueprintReadOnly, Category = "Telemetry")
 	FVehicleTelemetryData CurrentTelemetry; // Oggetto telemtria corrente
 
@@ -163,12 +249,18 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Lap")
 	FLapData CurrentLap;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Race_Control")
+	FRaceControlData CurrentControlData;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Leaderboard")
+	FLeaderboardData CurrentLeaderboard;
+
 private:
 	FSocket* ReceiverSocket;	// Puntatore al ricevitore UDP
 	FTimerHandle UDPReceiveTimerHandle; // Cronometro interno di Unreal Engine per gestire la ricezione dei pacchetti UDP
 
-	void ReceiveUDPData();	// Funzione per ricevere i pacchetti UDP, leggere i byte in arrivo e tradurli in stringhe
-	void RoutePacket(const TSharedPtr<FJsonObject>& JsonObject);
+	void ReceiveUDPData();	// Riceve i pacchetti UDP, legge i byte in arrivo e li traduce in stringhe
+	void RoutePacket(const TSharedPtr<FJsonObject>& JsonObject); // Instrada i pacchetti in base al loro tipo verso l'handler corretto
 
 	void HandleDashboardData(const TSharedPtr<FJsonObject>& DataObject);
 	void HandleWeatherData(const TSharedPtr<FJsonObject>& DataObject);
@@ -176,8 +268,10 @@ private:
 	void HandleLocationData(const TSharedPtr<FJsonObject>& DataObject);
 	void HandleIntervalsData(const TSharedPtr<FJsonObject>& DataObject);
 	void HandleLapsData(const TSharedPtr<FJsonObject>& DataObject);
-	//void HandleRaceControlData(const TSharedPtr<FJsonObject>& DataObject);
-	//void HandleLeaderboardData(const TSharedPtr<FJsonObject>& DataObject);
-	//void HandleSessionInfoData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleRaceControlData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleLeaderboardData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleSessionInfoData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleDriverInfoData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleStintsInfoData(const TSharedPtr<FJsonObject>& DataObject);
 	
 };
