@@ -95,6 +95,48 @@ struct FLocationData {
 	FString Timestamp = TEXT("");
 };
 
+USTRUCT(BlueprintType)
+struct FIntervalData {
+	GENERATED_BODY()
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Interval")
+	float Leader_gap = 0.0f;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Interval")
+	float Interval = 0.0f;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Interval")
+	FString Timestamp = TEXT("");
+};
+
+USTRUCT(BlueprintType)
+struct FLapData {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	int32 LapNumber = 0;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	FString Sec1 = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	FString Sec2 = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	FString Sec3 = TEXT("");
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	float LapDuration = 0.0f;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	bool IsPersonalBest = false;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	FString Timestamp = TEXT("");
+};
+	
+
+
 UCLASS()
 class F1COMPANION_API UTelemetryManager : public UGameInstance
 {
@@ -115,6 +157,12 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Location")
 	FLocationData CurrentLocation;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Interval")
+	FIntervalData CurrentInterval;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Lap")
+	FLapData CurrentLap;
+
 private:
 	FSocket* ReceiverSocket;	// Puntatore al ricevitore UDP
 	FTimerHandle UDPReceiveTimerHandle; // Cronometro interno di Unreal Engine per gestire la ricezione dei pacchetti UDP
@@ -126,8 +174,8 @@ private:
 	void HandleWeatherData(const TSharedPtr<FJsonObject>& DataObject);
 	void HandleRadioCommsData(const TSharedPtr<FJsonObject>& DataObject);
 	void HandleLocationData(const TSharedPtr<FJsonObject>& DataObject);
-	//void HandleIntervalsData(const TSharedPtr<FJsonObject>& DataObject);
-	//void HandleLapsData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleIntervalsData(const TSharedPtr<FJsonObject>& DataObject);
+	void HandleLapsData(const TSharedPtr<FJsonObject>& DataObject);
 	//void HandleRaceControlData(const TSharedPtr<FJsonObject>& DataObject);
 	//void HandleLeaderboardData(const TSharedPtr<FJsonObject>& DataObject);
 	//void HandleSessionInfoData(const TSharedPtr<FJsonObject>& DataObject);

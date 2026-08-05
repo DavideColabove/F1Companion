@@ -80,7 +80,7 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		{
 			HandleWeatherData(DataObject);
 		}
-		/*else if (PacketId == TEXT("radio_comms_data"))
+		else if (PacketId == TEXT("radio_comms_data"))
 		{
 			HandleRadioCommsData(DataObject);
 		}
@@ -92,7 +92,7 @@ void UTelemetryManager::RoutePacket(const TSharedPtr<FJsonObject>& JsonObject)
 		{
 			HandleIntervalsData(DataObject);
 		}
-		else if (PacketId == TEXT("laps_data"))
+		/*else if (PacketId == TEXT("laps_data"))
 		{
 			HandleLapsData(DataObject);
 		}
@@ -179,7 +179,7 @@ void UTelemetryManager::HandleRadioCommsData(const TSharedPtr<FJsonObject>& Data
 
 	FString TempURL;
 	if (DataObject->TryGetStringField(TEXT("recording_url"), TempURL))
-		CurrentRadio.Radio_URL = TempTimestamp;
+		CurrentRadio.Radio_URL = TempURL;
 }
 
 void UTelemetryManager::HandleLocationData(const TSharedPtr<FJsonObject>& DataObject) {
@@ -202,4 +202,49 @@ void UTelemetryManager::HandleLocationData(const TSharedPtr<FJsonObject>& DataOb
 	FString TempTimestamp;
 	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
 		CurrentLocation.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleIntervalsData(const TSharedPtr<FJsonObject>& DataObject) {
+	double TempLeader_Gap;
+	if (DataObject->TryGetNumberField((TEXT("leader_gap")), TempLeader_Gap))
+		CurrentInterval.Leader_gap = TempLeader_Gap;
+
+	double TempInterval;
+	if (DataObject->TryGetNumberField((TEXT("interval")), TempInterval))
+		CurrentInterval.Interval = TempInterval;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentInterval.Timestamp = TempTimestamp;
+}
+
+void UTelemetryManager::HandleLapsData(const TSharedPtr<FJsonObject>& DataObject)
+{
+	int32 TempLapNumber;
+	if (DataObject->TryGetNumberField(TEXT("lap_number"), TempLapNumber))
+		CurrentLap.LapNumber = TempLapNumber;
+
+	TSharedPtr<FJsonValue> Sec1Val = DataObject->TryGetField(TEXT("sec1"));
+	if (Sec1Val.IsValid())
+		CurrentLap.Sec1 = Sec1Val->AsString();
+
+	TSharedPtr<FJsonValue> Sec2Val = DataObject->TryGetField(TEXT("sec2"));
+	if (Sec2Val.IsValid())
+		CurrentLap.Sec2 = Sec2Val->AsString();
+
+	TSharedPtr<FJsonValue> Sec3Val = DataObject->TryGetField(TEXT("sec3"));
+	if (Sec3Val.IsValid())
+		CurrentLap.Sec3 = Sec3Val->AsString();
+
+	double TempLapDuration;
+	if (DataObject->TryGetNumberField(TEXT("lap_duration"), TempLapDuration))
+		CurrentLap.LapDuration = TempLapDuration;
+
+	bool TempIsPB;
+	if (DataObject->TryGetBoolField(TEXT("is_personal_best"), TempIsPB))
+		CurrentLap.IsPersonalBest = TempIsPB;
+
+	FString TempTimestamp;
+	if (DataObject->TryGetStringField(TEXT("timestamp"), TempTimestamp))
+		CurrentLap.Timestamp = TempTimestamp;
 }
