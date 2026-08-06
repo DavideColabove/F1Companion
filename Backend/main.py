@@ -55,12 +55,12 @@ def main():
     # Avvio di tutti i threads
     telemetry_thread.start()
     position_thread.start()
-    weather_thread.start()
-    intervals_thread.start()
-    laps_thread.start()
-    race_control_thread.start()
-    leaderboard_thread.start()
-    radio_thread.start()
+    # weather_thread.start()
+    # intervals_thread.start()
+    # laps_thread.start()
+    # race_control_thread.start()
+    # leaderboard_thread.start()
+    # radio_thread.start()
 
 if __name__ == "__main__":
     try:

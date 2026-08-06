@@ -115,3 +115,1520 @@
 2026-08-04 17:48:58,923 - INFO - --------------------------------------------------
 2026-08-04 17:48:58,923 - INFO - Dashboard IRT
 2026-08-04 17:48:58,924 - INFO - --------------------------------------------------
+2026-08-05 14:00:47,223 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:00:47,224 - INFO - 
+2026-08-05 14:00:47,224 - INFO - --------------------------------------------------
+2026-08-05 14:00:47,224 - INFO - Informazioni sui PILOTI
+2026-08-05 14:00:47,224 - INFO - --------------------------------------------------
+2026-08-05 14:00:47,739 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:00:47,739 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:00:47,739 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:00:47,739 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:00:47,740 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:00:47,740 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:00:47,740 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:00:47,740 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:00:47,740 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:00:47,740 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:00:47,740 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:00:47,740 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:00:47,740 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:00:47,740 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:00:47,741 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:00:47,741 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:00:47,741 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:00:47,741 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:00:47,741 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:00:47,741 - INFO - 
+2026-08-05 14:00:47,741 - INFO - --------------------------------------------------
+2026-08-05 14:00:47,741 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:00:47,741 - INFO - --------------------------------------------------
+2026-08-05 14:00:48,180 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:00:48,180 - INFO - --------------------------------------------------
+2026-08-05 14:00:48,180 - INFO - 
+2026-08-05 14:00:48,180 - INFO - --------------------------------------------------
+2026-08-05 14:00:48,180 - INFO - Informazioni GOMME
+2026-08-05 14:00:48,180 - INFO - --------------------------------------------------
+2026-08-05 14:00:48,990 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:00:48,990 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:00:48,990 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:00:50,991 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:00:50,992 - INFO - 
+2026-08-05 14:00:50,992 - INFO - 
+2026-08-05 14:00:50,992 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,992 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,992 - INFO - 
+2026-08-05 14:00:50,992 - INFO - 
+2026-08-05 14:00:50,992 - INFO - Dashboard IRT
+2026-08-05 14:00:50,993 - INFO - Coordinate X,Y,Z
+2026-08-05 14:00:50,993 - INFO - 
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - 
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - 
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - 
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - Condizioni METEO real-time
+2026-08-05 14:00:50,993 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,993 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:00:50,995 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:00:50,994 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,994 - INFO - Dati del GIRO
+2026-08-05 14:00:50,994 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,994 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,995 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,996 - INFO - Live LEADERBOARD
+2026-08-05 14:00:50,996 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,995 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,995 - INFO - Live RADIO
+2026-08-05 14:00:50,996 - INFO - --------------------------------------------------
+2026-08-05 14:00:50,998 - INFO - --------------------------------------------------
+2026-08-05 14:00:51,702 - INFO - | Timestamp 2023-09-17T11:56:04.711000+00:00 | Recording URL https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/TeamRadio/MAXVER01_1_20230917_125540.mp3 |
+2026-08-05 14:00:51,726 - ERROR - Errore di comunicazione con le API (/intervals): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9165&driver_number=1
+2026-08-05 14:00:51,726 - ERROR - Errore di comunicazione con le API (/car_data): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/car_data?session_key=9165&driver_number=1
+2026-08-05 14:00:51,727 - WARNING - Nessun dato relativo agli intervalli!
+2026-08-05 14:00:51,728 - WARNING - Nessun dato relativo alla velocità!
+2026-08-05 14:00:51,736 - ERROR - Errore di comunicazione con le API (/position): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9165
+2026-08-05 14:00:51,737 - WARNING - Nessun dato relativo alla leaderboard!
+2026-08-05 14:00:51,740 - ERROR - Errore di comunicazione con le API (/weather): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9165
+2026-08-05 14:00:51,741 - WARNING - Nessun dato relativo al meteo!
+2026-08-05 14:00:51,742 - ERROR - Errore di comunicazione con le API (/laps): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9165&driver_number=1
+2026-08-05 14:00:51,743 - WARNING - Nessun dato relativo ai giri!
+2026-08-05 14:01:55,695 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:01:55,695 - INFO - 
+2026-08-05 14:01:55,695 - INFO - --------------------------------------------------
+2026-08-05 14:01:55,695 - INFO - Informazioni sui PILOTI
+2026-08-05 14:01:55,695 - INFO - --------------------------------------------------
+2026-08-05 14:01:56,147 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:01:56,148 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:01:56,148 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:01:56,149 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:01:56,149 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:01:56,149 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:01:56,150 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:01:56,150 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:01:56,150 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:01:56,150 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:01:56,150 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:01:56,150 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:01:56,150 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:01:56,150 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:01:56,150 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:01:56,150 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:01:56,151 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:01:56,151 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:01:56,151 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:01:56,151 - INFO - 
+2026-08-05 14:01:56,151 - INFO - --------------------------------------------------
+2026-08-05 14:01:56,151 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:01:56,151 - INFO - --------------------------------------------------
+2026-08-05 14:01:56,993 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:01:56,994 - INFO - --------------------------------------------------
+2026-08-05 14:01:56,994 - INFO - 
+2026-08-05 14:01:56,994 - INFO - --------------------------------------------------
+2026-08-05 14:01:56,994 - INFO - Informazioni GOMME
+2026-08-05 14:01:56,994 - INFO - --------------------------------------------------
+2026-08-05 14:01:57,436 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:01:57,437 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:01:57,437 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:01:59,437 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:01:59,438 - INFO - 
+2026-08-05 14:01:59,438 - INFO - 
+2026-08-05 14:01:59,438 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,438 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,438 - INFO - 
+2026-08-05 14:01:59,439 - INFO - 
+2026-08-05 14:01:59,438 - INFO - 
+2026-08-05 14:01:59,439 - INFO - 
+2026-08-05 14:01:59,439 - INFO - 
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,439 - INFO - 
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,439 - INFO - Coordinate X,Y,Z
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,438 - INFO - Dashboard IRT
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,439 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:01:59,439 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,439 - INFO - Dati del GIRO
+2026-08-05 14:01:59,440 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,440 - INFO - Condizioni METEO real-time
+2026-08-05 14:01:59,440 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,440 - INFO - Live LEADERBOARD
+2026-08-05 14:01:59,440 - INFO - Live RADIO
+2026-08-05 14:01:59,440 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,440 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:01:59,440 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,440 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,441 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,441 - INFO - --------------------------------------------------
+2026-08-05 14:01:59,441 - INFO - --------------------------------------------------
+2026-08-05 14:02:00,069 - INFO - | Timestamp 2023-09-17T11:56:04.711000+00:00 | Recording URL https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/TeamRadio/MAXVER01_1_20230917_125540.mp3 |
+2026-08-05 14:02:00,159 - ERROR - Errore di comunicazione con le API (/location): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/location?session_key=9165&driver_number=1
+2026-08-05 14:02:00,160 - WARNING - [SECURITY] Pacchetto 'laps_data' SCARTATO. Chiave 'is_personal_best' errata: None (Ricevuto: <class 'NoneType'>, Atteso: <class 'bool'>)
+2026-08-05 14:02:00,161 - WARNING - Nessun dato relativo alla posizione!
+2026-08-05 14:02:00,172 - ERROR - Errore di comunicazione con le API (/car_data): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/car_data?session_key=9165&driver_number=1
+2026-08-05 14:02:00,173 - WARNING - Nessun dato relativo alla velocità!
+2026-08-05 14:02:00,179 - ERROR - Errore di comunicazione con le API (/weather): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9165
+2026-08-05 14:02:00,180 - WARNING - Nessun dato relativo al meteo!
+2026-08-05 14:02:00,198 - ERROR - Errore di comunicazione con le API (/position): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9165
+2026-08-05 14:02:00,198 - WARNING - Nessun dato relativo alla leaderboard!
+2026-08-05 14:02:00,200 - ERROR - Errore di comunicazione con le API (/race_control): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/race_control?session_key=9165
+2026-08-05 14:02:00,201 - WARNING - Nessun dato relativo agli eventi di gara!
+2026-08-05 14:02:15,474 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:02:15,475 - INFO - 
+2026-08-05 14:02:15,475 - INFO - --------------------------------------------------
+2026-08-05 14:02:15,475 - INFO - Informazioni sui PILOTI
+2026-08-05 14:02:15,475 - INFO - --------------------------------------------------
+2026-08-05 14:02:15,915 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:02:15,915 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:02:15,916 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:02:15,916 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:02:15,916 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:02:15,916 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:02:15,916 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:02:15,916 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:02:15,916 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:02:15,916 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:02:15,916 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:02:15,916 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:02:15,916 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:02:15,916 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:02:15,916 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:02:15,916 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:02:15,917 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:02:15,917 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:02:15,917 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:02:15,917 - INFO - 
+2026-08-05 14:02:15,917 - INFO - --------------------------------------------------
+2026-08-05 14:02:15,917 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:02:15,917 - INFO - --------------------------------------------------
+2026-08-05 14:02:16,344 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:02:16,344 - INFO - --------------------------------------------------
+2026-08-05 14:02:16,344 - INFO - 
+2026-08-05 14:02:16,344 - INFO - --------------------------------------------------
+2026-08-05 14:02:16,344 - INFO - Informazioni GOMME
+2026-08-05 14:02:16,344 - INFO - --------------------------------------------------
+2026-08-05 14:02:16,773 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:02:16,773 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:02:16,773 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:02:18,773 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:02:18,774 - INFO - 
+2026-08-05 14:02:18,774 - INFO - 
+2026-08-05 14:02:18,774 - INFO - 
+2026-08-05 14:02:18,774 - INFO - 
+2026-08-05 14:02:18,774 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,774 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - 
+2026-08-05 14:02:18,775 - INFO - 
+2026-08-05 14:02:18,775 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - 
+2026-08-05 14:02:18,775 - INFO - Coordinate X,Y,Z
+2026-08-05 14:02:18,774 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - Dashboard IRT
+2026-08-05 14:02:18,775 - INFO - 
+2026-08-05 14:02:18,775 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:02:18,775 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,775 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - Condizioni METEO real-time
+2026-08-05 14:02:18,776 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - Live LEADERBOARD
+2026-08-05 14:02:18,777 - INFO - Dati del GIRO
+2026-08-05 14:02:18,777 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - Live RADIO
+2026-08-05 14:02:18,777 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,776 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:02:18,778 - INFO - --------------------------------------------------
+2026-08-05 14:02:18,780 - INFO - --------------------------------------------------
+2026-08-05 14:02:19,507 - ERROR - Errore di comunicazione con le API (/race_control): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/race_control?session_key=9165
+2026-08-05 14:02:19,508 - WARNING - Nessun dato relativo agli eventi di gara!
+2026-08-05 14:02:19,522 - ERROR - Errore di comunicazione con le API (/weather): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9165
+2026-08-05 14:02:19,523 - WARNING - Nessun dato relativo al meteo!
+2026-08-05 14:02:19,524 - ERROR - Errore di comunicazione con le API (/position): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9165
+2026-08-05 14:02:19,525 - WARNING - Nessun dato relativo alla leaderboard!
+2026-08-05 14:02:19,531 - ERROR - Errore di comunicazione con le API (/team_radio): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/team_radio?session_key=9165&driver_number=1
+2026-08-05 14:02:19,531 - ERROR - Errore di comunicazione con le API (/laps): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9165&driver_number=1
+2026-08-05 14:02:19,532 - WARNING - Nessun dato relativo alle comunicazioni radio!
+2026-08-05 14:02:19,533 - WARNING - Nessun dato relativo ai giri!
+2026-08-05 14:13:00,607 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:13:00,613 - INFO - 
+2026-08-05 14:13:00,613 - INFO - --------------------------------------------------
+2026-08-05 14:13:00,613 - INFO - Informazioni sui PILOTI
+2026-08-05 14:13:00,613 - INFO - --------------------------------------------------
+2026-08-05 14:13:01,178 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:13:01,180 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:13:01,180 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:13:01,180 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:13:01,180 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:13:01,180 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:13:01,180 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:13:01,181 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:13:01,181 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:13:01,182 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:13:01,182 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:13:01,182 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:13:01,183 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:13:01,183 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:13:01,184 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:13:01,184 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:13:01,184 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:13:01,184 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:13:01,185 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:13:01,186 - INFO - 
+2026-08-05 14:13:01,186 - INFO - --------------------------------------------------
+2026-08-05 14:13:01,186 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:13:01,187 - INFO - --------------------------------------------------
+2026-08-05 14:13:01,608 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:13:01,608 - INFO - --------------------------------------------------
+2026-08-05 14:13:01,608 - INFO - 
+2026-08-05 14:13:01,608 - INFO - --------------------------------------------------
+2026-08-05 14:13:01,608 - INFO - Informazioni GOMME
+2026-08-05 14:13:01,608 - INFO - --------------------------------------------------
+2026-08-05 14:13:02,017 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:13:02,017 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:13:02,017 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:13:04,018 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:13:04,019 - INFO - 
+2026-08-05 14:13:04,023 - INFO - 
+2026-08-05 14:13:04,023 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,024 - INFO - 
+2026-08-05 14:13:04,024 - INFO - Dashboard IRT
+2026-08-05 14:13:04,024 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,024 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,024 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,024 - INFO - Condizioni METEO real-time
+2026-08-05 14:13:04,024 - INFO - 
+2026-08-05 14:13:04,024 - INFO - 
+2026-08-05 14:13:04,024 - INFO - 
+2026-08-05 14:13:04,024 - INFO - Coordinate X,Y,Z
+2026-08-05 14:13:04,025 - INFO - 
+2026-08-05 14:13:04,025 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,025 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,025 - INFO - 
+2026-08-05 14:13:04,025 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,025 - INFO - Dati del GIRO
+2026-08-05 14:13:04,026 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,026 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,026 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,026 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,027 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,028 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:13:04,028 - INFO - Live RADIO
+2026-08-05 14:13:04,029 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:13:04,029 - INFO - Live LEADERBOARD
+2026-08-05 14:13:04,030 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,030 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,030 - INFO - --------------------------------------------------
+2026-08-05 14:13:04,030 - INFO - --------------------------------------------------
+2026-08-05 14:13:05,676 - INFO - | [LEADERBOARD] Auto #55 è ora in P1 |
+2026-08-05 14:13:05,676 - INFO - | [LEADERBOARD] Auto #63 è ora in P2 |
+2026-08-05 14:13:05,677 - INFO - | [LEADERBOARD] Auto #16 è ora in P3 |
+2026-08-05 14:13:05,677 - INFO - | [LEADERBOARD] Auto #4 è ora in P4 |
+2026-08-05 14:13:05,677 - INFO - | [LEADERBOARD] Auto #44 è ora in P5 |
+2026-08-05 14:13:05,677 - INFO - | [LEADERBOARD] Auto #20 è ora in P6 |
+2026-08-05 14:13:05,678 - INFO - | [LEADERBOARD] Auto #14 è ora in P7 |
+2026-08-05 14:13:05,680 - INFO - | [LEADERBOARD] Auto #31 è ora in P8 |
+2026-08-05 14:13:05,680 - INFO - | [LEADERBOARD] Auto #27 è ora in P9 |
+2026-08-05 14:13:05,680 - INFO - | [LEADERBOARD] Auto #40 è ora in P10 |
+2026-08-05 14:13:05,682 - INFO - | [LEADERBOARD] Auto #1 è ora in P11 |
+2026-08-05 14:13:05,683 - INFO - | [LEADERBOARD] Auto #10 è ora in P12 |
+2026-08-05 14:13:05,688 - INFO - | [LEADERBOARD] Auto #11 è ora in P13 |
+2026-08-05 14:13:05,689 - INFO - | [LEADERBOARD] Auto #23 è ora in P14 |
+2026-08-05 14:13:05,690 - INFO - | [LEADERBOARD] Auto #22 è ora in P15 |
+2026-08-05 14:13:05,690 - INFO - | [LEADERBOARD] Auto #77 è ora in P16 |
+2026-08-05 14:13:05,691 - INFO - | [LEADERBOARD] Auto #81 è ora in P17 |
+2026-08-05 14:13:05,691 - INFO - | [LEADERBOARD] Auto #2 è ora in P18 |
+2026-08-05 14:13:05,691 - INFO - | [LEADERBOARD] Auto #24 è ora in P19 |
+2026-08-05 14:13:05,699 - ERROR - Errore di comunicazione con le API (/laps): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9165&driver_number=1
+2026-08-05 14:13:05,703 - WARNING - Nessun dato relativo ai giri!
+2026-08-05 14:13:05,761 - ERROR - Errore di comunicazione con le API (/intervals): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9165&driver_number=1
+2026-08-05 14:13:05,769 - WARNING - Nessun dato relativo agli intervalli!
+2026-08-05 14:13:05,903 - ERROR - Errore di comunicazione con le API (/location): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/location?session_key=9165&driver_number=1
+2026-08-05 14:13:05,905 - WARNING - Nessun dato relativo alla posizione!
+2026-08-05 14:13:05,941 - ERROR - Errore di comunicazione con le API (/weather): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/weather?session_key=9165
+2026-08-05 14:13:05,946 - WARNING - Nessun dato relativo al meteo!
+2026-08-05 14:13:05,956 - ERROR - Errore di comunicazione con le API (/team_radio): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/team_radio?session_key=9165&driver_number=1
+2026-08-05 14:13:05,961 - WARNING - Nessun dato relativo alle comunicazioni radio!
+2026-08-05 14:20:13,918 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:20:13,918 - INFO - 
+2026-08-05 14:20:13,918 - INFO - --------------------------------------------------
+2026-08-05 14:20:13,918 - INFO - Informazioni sui PILOTI
+2026-08-05 14:20:13,918 - INFO - --------------------------------------------------
+2026-08-05 14:20:14,346 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:20:14,346 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:20:14,346 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:20:14,346 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:20:14,346 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:20:14,346 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:20:14,346 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:20:14,346 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:20:14,346 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:20:14,347 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:20:14,347 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:20:14,347 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:20:14,347 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:20:14,347 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:20:14,347 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:20:14,347 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:20:14,347 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:20:14,347 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:20:14,347 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:20:14,347 - INFO - 
+2026-08-05 14:20:14,348 - INFO - --------------------------------------------------
+2026-08-05 14:20:14,348 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:20:14,348 - INFO - --------------------------------------------------
+2026-08-05 14:20:14,751 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:20:14,752 - INFO - --------------------------------------------------
+2026-08-05 14:20:14,752 - INFO - 
+2026-08-05 14:20:14,752 - INFO - --------------------------------------------------
+2026-08-05 14:20:14,752 - INFO - Informazioni GOMME
+2026-08-05 14:20:14,752 - INFO - --------------------------------------------------
+2026-08-05 14:20:15,169 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:20:15,169 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:20:15,169 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:20:17,170 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:20:17,170 - INFO - 
+2026-08-05 14:20:17,170 - INFO - 
+2026-08-05 14:20:17,171 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,171 - INFO - 
+2026-08-05 14:20:17,171 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,171 - INFO - Dashboard IRT
+2026-08-05 14:20:17,171 - INFO - 
+2026-08-05 14:20:17,171 - INFO - 
+2026-08-05 14:20:17,172 - INFO - 
+2026-08-05 14:20:17,171 - INFO - Coordinate X,Y,Z
+2026-08-05 14:20:17,171 - INFO - 
+2026-08-05 14:20:17,171 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,171 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,172 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,171 - INFO - 
+2026-08-05 14:20:17,172 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:20:17,172 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,172 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,172 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,172 - INFO - Condizioni METEO real-time
+2026-08-05 14:20:17,172 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,173 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,173 - INFO - Live LEADERBOARD
+2026-08-05 14:20:17,174 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,173 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,173 - INFO - Live RADIO
+2026-08-05 14:20:17,173 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:20:17,175 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,175 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,176 - INFO - Dati del GIRO
+2026-08-05 14:20:17,177 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,177 - INFO - --------------------------------------------------
+2026-08-05 14:20:17,851 - ERROR - Errore di comunicazione con le API (/location): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/location?session_key=9165&driver_number=1
+2026-08-05 14:20:17,852 - WARNING - Nessun dato relativo alla posizione!
+2026-08-05 14:20:17,854 - ERROR - Errore di comunicazione con le API (/position): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9165
+2026-08-05 14:20:17,855 - WARNING - Nessun dato relativo alla leaderboard!
+2026-08-05 14:20:17,876 - ERROR - Errore di comunicazione con le API (/team_radio): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/team_radio?session_key=9165&driver_number=1
+2026-08-05 14:20:17,877 - WARNING - Nessun dato relativo alle comunicazioni radio!
+2026-08-05 14:20:17,881 - ERROR - Errore di comunicazione con le API (/laps): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/laps?session_key=9165&driver_number=1
+2026-08-05 14:20:17,881 - ERROR - Errore di comunicazione con le API (/race_control): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/race_control?session_key=9165
+2026-08-05 14:20:17,882 - WARNING - Nessun dato relativo ai giri!
+2026-08-05 14:20:17,885 - WARNING - Nessun dato relativo agli eventi di gara!
+2026-08-05 14:24:33,130 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:24:33,130 - INFO - 
+2026-08-05 14:24:33,130 - INFO - --------------------------------------------------
+2026-08-05 14:24:33,130 - INFO - Informazioni sui PILOTI
+2026-08-05 14:24:33,130 - INFO - --------------------------------------------------
+2026-08-05 14:24:33,560 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:24:33,560 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:24:33,560 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:24:33,560 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:24:33,561 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:24:33,561 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:24:33,561 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:24:33,561 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:24:33,561 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:24:33,561 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:24:33,561 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:24:33,561 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:24:33,561 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:24:33,561 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:24:33,561 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:24:33,561 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:24:33,562 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:24:33,562 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:24:33,562 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:24:33,562 - INFO - 
+2026-08-05 14:24:33,562 - INFO - --------------------------------------------------
+2026-08-05 14:24:33,562 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:24:33,562 - INFO - --------------------------------------------------
+2026-08-05 14:24:34,077 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:24:34,077 - INFO - --------------------------------------------------
+2026-08-05 14:24:34,077 - INFO - 
+2026-08-05 14:24:34,077 - INFO - --------------------------------------------------
+2026-08-05 14:24:34,077 - INFO - Informazioni GOMME
+2026-08-05 14:24:34,077 - INFO - --------------------------------------------------
+2026-08-05 14:24:34,477 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:24:34,477 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:24:34,477 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:24:36,478 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:24:36,479 - INFO - 
+2026-08-05 14:24:36,479 - INFO - 
+2026-08-05 14:24:36,479 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,479 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,479 - INFO - 
+2026-08-05 14:24:36,479 - INFO - 
+2026-08-05 14:24:36,479 - INFO - 
+2026-08-05 14:24:36,480 - INFO - 
+2026-08-05 14:24:36,479 - INFO - Dashboard IRT
+2026-08-05 14:24:36,480 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,480 - INFO - 
+2026-08-05 14:24:36,480 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,479 - INFO - Coordinate X,Y,Z
+2026-08-05 14:24:36,480 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,480 - INFO - 
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - Condizioni METEO real-time
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - Dati del GIRO
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - Intervallo dal PRIMO e PRECEDENTE
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,482 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,482 - INFO - Informazioni di RACE CONTROL
+2026-08-05 14:24:36,482 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,481 - INFO - Live LEADERBOARD
+2026-08-05 14:24:36,482 - INFO - Live RADIO
+2026-08-05 14:24:36,484 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,484 - INFO - --------------------------------------------------
+2026-08-05 14:24:36,485 - INFO - --------------------------------------------------
+2026-08-05 14:24:37,292 - ERROR - Errore di comunicazione con le API (/position): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/position?session_key=9165
+2026-08-05 14:24:37,293 - ERROR - Errore di comunicazione con le API (/race_control): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/race_control?session_key=9165
+2026-08-05 14:24:37,293 - ERROR - Errore di comunicazione con le API (/team_radio): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/team_radio?session_key=9165&driver_number=1
+2026-08-05 14:24:37,295 - WARNING - Nessun dato relativo agli eventi di gara!
+2026-08-05 14:24:37,294 - WARNING - Nessun dato relativo alla leaderboard!
+2026-08-05 14:24:37,293 - ERROR - Errore di comunicazione con le API (/car_data): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/car_data?session_key=9165&driver_number=1
+2026-08-05 14:24:37,295 - ERROR - Errore di comunicazione con le API (/intervals): 429 Client Error: Too Many Requests for url: https://api.openf1.org/v1/intervals?session_key=9165&driver_number=1
+2026-08-05 14:24:37,296 - WARNING - Nessun dato relativo alle comunicazioni radio!
+2026-08-05 14:24:37,297 - WARNING - Nessun dato relativo alla velocità!
+2026-08-05 14:24:37,298 - WARNING - Nessun dato relativo agli intervalli!
+2026-08-05 14:24:37,401 - WARNING - [SECURITY] Pacchetto 'laps_data' SCARTATO. Chiave 'is_personal_best' errata: None (Ricevuto: <class 'NoneType'>, Atteso: <class 'bool'>)
+2026-08-05 14:24:59,653 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:24:59,653 - INFO - 
+2026-08-05 14:24:59,654 - INFO - --------------------------------------------------
+2026-08-05 14:24:59,654 - INFO - Informazioni sui PILOTI
+2026-08-05 14:24:59,654 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,069 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:25:00,069 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:25:00,069 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:25:00,069 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:25:00,070 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:25:00,070 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:25:00,070 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:25:00,070 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:25:00,070 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:25:00,070 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:25:00,070 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:25:00,070 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:25:00,070 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:25:00,070 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:25:00,070 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:25:00,070 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:25:00,071 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:25:00,071 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:25:00,071 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:25:00,071 - INFO - 
+2026-08-05 14:25:00,071 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,071 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:25:00,071 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,479 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:25:00,479 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,479 - INFO - 
+2026-08-05 14:25:00,479 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,479 - INFO - Informazioni GOMME
+2026-08-05 14:25:00,479 - INFO - --------------------------------------------------
+2026-08-05 14:25:00,887 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:25:00,887 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:25:00,887 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:25:02,888 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:25:02,888 - INFO - 
+2026-08-05 14:25:02,888 - INFO - --------------------------------------------------
+2026-08-05 14:25:02,889 - INFO - Dashboard IRT
+2026-08-05 14:25:02,889 - INFO - --------------------------------------------------
+2026-08-05 14:28:54,845 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:28:54,846 - INFO - 
+2026-08-05 14:28:54,846 - INFO - --------------------------------------------------
+2026-08-05 14:28:54,846 - INFO - Informazioni sui PILOTI
+2026-08-05 14:28:54,846 - INFO - --------------------------------------------------
+2026-08-05 14:28:55,391 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:28:55,392 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:28:55,392 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:28:55,392 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:28:55,392 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:28:55,392 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:28:55,392 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:28:55,392 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:28:55,392 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:28:55,392 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:28:55,392 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:28:55,392 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:28:55,392 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:28:55,392 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:28:55,393 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:28:55,393 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:28:55,393 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:28:55,393 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:28:55,393 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:28:55,393 - INFO - 
+2026-08-05 14:28:55,393 - INFO - --------------------------------------------------
+2026-08-05 14:28:55,393 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:28:55,393 - INFO - --------------------------------------------------
+2026-08-05 14:28:55,826 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:28:55,826 - INFO - --------------------------------------------------
+2026-08-05 14:28:55,826 - INFO - 
+2026-08-05 14:28:55,826 - INFO - --------------------------------------------------
+2026-08-05 14:28:55,826 - INFO - Informazioni GOMME
+2026-08-05 14:28:55,826 - INFO - --------------------------------------------------
+2026-08-05 14:28:56,258 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:28:56,258 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:28:56,258 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:28:58,259 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:28:58,259 - INFO - 
+2026-08-05 14:28:58,260 - INFO - --------------------------------------------------
+2026-08-05 14:28:58,260 - INFO - Dashboard IRT
+2026-08-05 14:28:58,260 - INFO - --------------------------------------------------
+2026-08-05 14:34:41,283 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 14:34:41,283 - INFO - 
+2026-08-05 14:34:41,283 - INFO - --------------------------------------------------
+2026-08-05 14:34:41,283 - INFO - Informazioni sui PILOTI
+2026-08-05 14:34:41,283 - INFO - --------------------------------------------------
+2026-08-05 14:34:41,824 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 14:34:41,824 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 14:34:41,824 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 14:34:41,824 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 14:34:41,825 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 14:34:41,825 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 14:34:41,825 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 14:34:41,825 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 14:34:41,825 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 14:34:41,825 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 14:34:41,825 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 14:34:41,825 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 14:34:41,825 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 14:34:41,825 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 14:34:41,825 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 14:34:41,825 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 14:34:41,825 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 14:34:41,826 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 14:34:41,826 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 14:34:41,826 - INFO - 
+2026-08-05 14:34:41,826 - INFO - --------------------------------------------------
+2026-08-05 14:34:41,826 - INFO - Informazioni sul CIRCUITO
+2026-08-05 14:34:41,826 - INFO - --------------------------------------------------
+2026-08-05 14:34:42,233 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 14:34:42,234 - INFO - --------------------------------------------------
+2026-08-05 14:34:42,234 - INFO - 
+2026-08-05 14:34:42,234 - INFO - --------------------------------------------------
+2026-08-05 14:34:42,234 - INFO - Informazioni GOMME
+2026-08-05 14:34:42,234 - INFO - --------------------------------------------------
+2026-08-05 14:34:42,816 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 14:34:42,816 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 14:34:42,816 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 14:34:44,817 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 14:34:44,817 - INFO - 
+2026-08-05 14:34:44,818 - INFO - --------------------------------------------------
+2026-08-05 14:34:44,818 - INFO - Dashboard IRT
+2026-08-05 14:34:44,818 - INFO - --------------------------------------------------
+2026-08-05 16:21:53,882 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 16:21:53,883 - INFO - 
+2026-08-05 16:21:53,883 - INFO - --------------------------------------------------
+2026-08-05 16:21:53,883 - INFO - Informazioni sui PILOTI
+2026-08-05 16:21:53,883 - INFO - --------------------------------------------------
+2026-08-05 16:21:54,377 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 16:21:54,377 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 16:21:54,377 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 16:21:54,377 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 16:21:54,377 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 16:21:54,377 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 16:21:54,377 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 16:21:54,377 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 16:21:54,378 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 16:21:54,378 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 16:21:54,378 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 16:21:54,378 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 16:21:54,378 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 16:21:54,378 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 16:21:54,378 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 16:21:54,378 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 16:21:54,378 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 16:21:54,378 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 16:21:54,378 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 16:21:54,379 - INFO - 
+2026-08-05 16:21:54,379 - INFO - --------------------------------------------------
+2026-08-05 16:21:54,379 - INFO - Informazioni sul CIRCUITO
+2026-08-05 16:21:54,379 - INFO - --------------------------------------------------
+2026-08-05 16:21:54,800 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 16:21:54,800 - INFO - --------------------------------------------------
+2026-08-05 16:21:54,801 - INFO - 
+2026-08-05 16:21:54,801 - INFO - --------------------------------------------------
+2026-08-05 16:21:54,801 - INFO - Informazioni GOMME
+2026-08-05 16:21:54,801 - INFO - --------------------------------------------------
+2026-08-05 16:21:55,231 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 16:21:55,231 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 16:21:55,231 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 16:21:57,231 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 16:21:57,232 - INFO - 
+2026-08-05 16:21:57,233 - INFO - --------------------------------------------------
+2026-08-05 16:21:57,233 - INFO - Dashboard IRT
+2026-08-05 16:21:57,233 - INFO - --------------------------------------------------
+2026-08-05 16:30:41,156 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 16:30:41,156 - INFO - 
+2026-08-05 16:30:41,156 - INFO - --------------------------------------------------
+2026-08-05 16:30:41,156 - INFO - Informazioni sui PILOTI
+2026-08-05 16:30:41,157 - INFO - --------------------------------------------------
+2026-08-05 16:30:41,913 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 16:30:41,913 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 16:30:41,913 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 16:30:41,913 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 16:30:41,913 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 16:30:41,913 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 16:30:41,913 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 16:30:41,913 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 16:30:41,913 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 16:30:41,913 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 16:30:41,913 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 16:30:41,914 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 16:30:41,914 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 16:30:41,914 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 16:30:41,914 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 16:30:41,914 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 16:30:41,914 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 16:30:41,914 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 16:30:41,914 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 16:30:41,914 - INFO - 
+2026-08-05 16:30:41,915 - INFO - --------------------------------------------------
+2026-08-05 16:30:41,915 - INFO - Informazioni sul CIRCUITO
+2026-08-05 16:30:41,915 - INFO - --------------------------------------------------
+2026-08-05 16:30:42,327 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 16:30:42,327 - INFO - --------------------------------------------------
+2026-08-05 16:30:42,327 - INFO - 
+2026-08-05 16:30:42,327 - INFO - --------------------------------------------------
+2026-08-05 16:30:42,327 - INFO - Informazioni GOMME
+2026-08-05 16:30:42,327 - INFO - --------------------------------------------------
+2026-08-05 16:30:42,773 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 16:30:42,773 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 16:30:42,773 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 16:30:44,773 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 16:30:44,774 - INFO - 
+2026-08-05 16:30:44,774 - INFO - --------------------------------------------------
+2026-08-05 16:30:44,774 - INFO - Dashboard IRT
+2026-08-05 16:30:44,774 - INFO - --------------------------------------------------
+2026-08-05 22:18:02,153 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-05 22:18:02,153 - INFO - 
+2026-08-05 22:18:02,153 - INFO - --------------------------------------------------
+2026-08-05 22:18:02,153 - INFO - Informazioni sui PILOTI
+2026-08-05 22:18:02,154 - INFO - --------------------------------------------------
+2026-08-05 22:18:02,652 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-05 22:18:02,652 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-05 22:18:02,652 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-05 22:18:02,652 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-05 22:18:02,652 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-05 22:18:02,653 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-05 22:18:02,653 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-05 22:18:02,653 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-05 22:18:02,653 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-05 22:18:02,653 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-05 22:18:02,653 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-05 22:18:02,653 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-05 22:18:02,653 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-05 22:18:02,653 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-05 22:18:02,653 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-05 22:18:02,653 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-05 22:18:02,653 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-05 22:18:02,653 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-05 22:18:02,653 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-05 22:18:02,654 - INFO - 
+2026-08-05 22:18:02,654 - INFO - --------------------------------------------------
+2026-08-05 22:18:02,654 - INFO - Informazioni sul CIRCUITO
+2026-08-05 22:18:02,654 - INFO - --------------------------------------------------
+2026-08-05 22:18:03,049 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-05 22:18:03,049 - INFO - --------------------------------------------------
+2026-08-05 22:18:03,049 - INFO - 
+2026-08-05 22:18:03,049 - INFO - --------------------------------------------------
+2026-08-05 22:18:03,049 - INFO - Informazioni GOMME
+2026-08-05 22:18:03,050 - INFO - --------------------------------------------------
+2026-08-05 22:18:03,442 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-05 22:18:03,442 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-05 22:18:03,442 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-05 22:18:05,443 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-05 22:18:05,443 - INFO - 
+2026-08-05 22:18:05,443 - INFO - --------------------------------------------------
+2026-08-05 22:18:05,444 - INFO - Dashboard IRT
+2026-08-05 22:18:05,444 - INFO - --------------------------------------------------
+2026-08-06 01:32:10,492 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 01:32:10,493 - INFO - 
+2026-08-06 01:32:10,493 - INFO - --------------------------------------------------
+2026-08-06 01:32:10,494 - INFO - Informazioni sui PILOTI
+2026-08-06 01:32:10,495 - INFO - --------------------------------------------------
+2026-08-06 01:32:11,188 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 01:32:11,188 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 01:32:11,188 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 01:32:11,188 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 01:32:11,189 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 01:32:11,189 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 01:32:11,190 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 01:32:11,192 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 01:32:11,192 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 01:32:11,193 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 01:32:11,193 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 01:32:11,193 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 01:32:11,193 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 01:32:11,193 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 01:32:11,194 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 01:32:11,194 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 01:32:11,195 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 01:32:11,195 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 01:32:11,195 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 01:32:11,196 - INFO - 
+2026-08-06 01:32:11,196 - INFO - --------------------------------------------------
+2026-08-06 01:32:11,196 - INFO - Informazioni sul CIRCUITO
+2026-08-06 01:32:11,196 - INFO - --------------------------------------------------
+2026-08-06 01:32:11,788 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 01:32:11,788 - INFO - --------------------------------------------------
+2026-08-06 01:32:11,789 - INFO - 
+2026-08-06 01:32:11,789 - INFO - --------------------------------------------------
+2026-08-06 01:32:11,789 - INFO - Informazioni GOMME
+2026-08-06 01:32:11,789 - INFO - --------------------------------------------------
+2026-08-06 01:32:12,218 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 01:32:12,218 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 01:32:12,218 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 01:32:14,218 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 01:32:14,223 - INFO - 
+2026-08-06 01:32:14,224 - INFO - --------------------------------------------------
+2026-08-06 01:32:14,230 - INFO - Dashboard IRT
+2026-08-06 01:32:14,230 - INFO - --------------------------------------------------
+2026-08-06 01:39:33,463 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 01:39:33,464 - INFO - 
+2026-08-06 01:39:33,464 - INFO - --------------------------------------------------
+2026-08-06 01:39:33,464 - INFO - Informazioni sui PILOTI
+2026-08-06 01:39:33,464 - INFO - --------------------------------------------------
+2026-08-06 01:39:33,889 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 01:39:33,889 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 01:39:33,889 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 01:39:33,889 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 01:39:33,889 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 01:39:33,889 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 01:39:33,889 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 01:39:33,890 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 01:39:33,890 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 01:39:33,890 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 01:39:33,890 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 01:39:33,890 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 01:39:33,890 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 01:39:33,890 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 01:39:33,890 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 01:39:33,890 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 01:39:33,890 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 01:39:33,890 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 01:39:33,890 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 01:39:33,891 - INFO - 
+2026-08-06 01:39:33,891 - INFO - --------------------------------------------------
+2026-08-06 01:39:33,891 - INFO - Informazioni sul CIRCUITO
+2026-08-06 01:39:33,891 - INFO - --------------------------------------------------
+2026-08-06 01:39:34,293 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 01:39:34,293 - INFO - --------------------------------------------------
+2026-08-06 01:39:34,293 - INFO - 
+2026-08-06 01:39:34,293 - INFO - --------------------------------------------------
+2026-08-06 01:39:34,293 - INFO - Informazioni GOMME
+2026-08-06 01:39:34,293 - INFO - --------------------------------------------------
+2026-08-06 01:39:34,697 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 01:39:34,697 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 01:39:34,697 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 01:39:36,698 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 01:39:36,698 - INFO - 
+2026-08-06 01:39:36,699 - INFO - --------------------------------------------------
+2026-08-06 01:39:36,699 - INFO - Dashboard IRT
+2026-08-06 01:39:36,699 - INFO - --------------------------------------------------
+2026-08-06 01:42:36,260 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 01:42:36,260 - INFO - 
+2026-08-06 01:42:36,260 - INFO - --------------------------------------------------
+2026-08-06 01:42:36,260 - INFO - Informazioni sui PILOTI
+2026-08-06 01:42:36,260 - INFO - --------------------------------------------------
+2026-08-06 01:42:36,683 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 01:42:36,683 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 01:42:36,683 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 01:42:36,683 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 01:42:36,683 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 01:42:36,683 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 01:42:36,683 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 01:42:36,683 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 01:42:36,684 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 01:42:36,684 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 01:42:36,684 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 01:42:36,684 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 01:42:36,684 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 01:42:36,684 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 01:42:36,684 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 01:42:36,684 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 01:42:36,684 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 01:42:36,684 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 01:42:36,684 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 01:42:36,685 - INFO - 
+2026-08-06 01:42:36,685 - INFO - --------------------------------------------------
+2026-08-06 01:42:36,685 - INFO - Informazioni sul CIRCUITO
+2026-08-06 01:42:36,685 - INFO - --------------------------------------------------
+2026-08-06 01:42:37,083 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 01:42:37,083 - INFO - --------------------------------------------------
+2026-08-06 01:42:37,084 - INFO - 
+2026-08-06 01:42:37,084 - INFO - --------------------------------------------------
+2026-08-06 01:42:37,084 - INFO - Informazioni GOMME
+2026-08-06 01:42:37,084 - INFO - --------------------------------------------------
+2026-08-06 01:42:37,479 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 01:42:37,479 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 01:42:37,479 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 01:42:39,479 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 01:42:39,480 - INFO - 
+2026-08-06 01:42:39,480 - INFO - --------------------------------------------------
+2026-08-06 01:42:39,480 - INFO - Dashboard IRT
+2026-08-06 01:42:39,480 - INFO - --------------------------------------------------
+2026-08-06 02:13:43,333 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 02:13:43,333 - INFO - 
+2026-08-06 02:13:43,333 - INFO - --------------------------------------------------
+2026-08-06 02:13:43,333 - INFO - Informazioni sui PILOTI
+2026-08-06 02:13:43,334 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,081 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 02:13:45,081 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 02:13:45,081 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 02:13:45,082 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 02:13:45,082 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 02:13:45,082 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 02:13:45,082 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 02:13:45,082 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 02:13:45,082 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 02:13:45,082 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 02:13:45,082 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 02:13:45,082 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 02:13:45,082 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 02:13:45,082 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 02:13:45,082 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 02:13:45,083 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 02:13:45,083 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 02:13:45,083 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 02:13:45,083 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 02:13:45,083 - INFO - 
+2026-08-06 02:13:45,083 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,083 - INFO - Informazioni sul CIRCUITO
+2026-08-06 02:13:45,083 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,481 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 02:13:45,481 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,482 - INFO - 
+2026-08-06 02:13:45,482 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,482 - INFO - Informazioni GOMME
+2026-08-06 02:13:45,482 - INFO - --------------------------------------------------
+2026-08-06 02:13:45,877 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 02:13:45,877 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 02:13:45,877 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 02:13:47,878 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 02:13:47,878 - INFO - 
+2026-08-06 02:13:47,879 - INFO - --------------------------------------------------
+2026-08-06 02:13:47,879 - INFO - Dashboard IRT
+2026-08-06 02:13:47,879 - INFO - --------------------------------------------------
+2026-08-06 02:14:53,985 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 02:14:53,985 - INFO - 
+2026-08-06 02:14:53,985 - INFO - --------------------------------------------------
+2026-08-06 02:14:53,985 - INFO - Informazioni sui PILOTI
+2026-08-06 02:14:53,985 - INFO - --------------------------------------------------
+2026-08-06 02:14:54,706 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 02:14:54,706 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 02:14:54,706 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 02:14:54,707 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 02:14:54,707 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 02:14:54,707 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 02:14:54,707 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 02:14:54,707 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 02:14:54,707 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 02:14:54,707 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 02:14:54,707 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 02:14:54,707 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 02:14:54,707 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 02:14:54,707 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 02:14:54,707 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 02:14:54,707 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 02:14:54,708 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 02:14:54,708 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 02:14:54,708 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 02:14:54,708 - INFO - 
+2026-08-06 02:14:54,708 - INFO - --------------------------------------------------
+2026-08-06 02:14:54,708 - INFO - Informazioni sul CIRCUITO
+2026-08-06 02:14:54,708 - INFO - --------------------------------------------------
+2026-08-06 02:14:55,208 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 02:14:55,208 - INFO - --------------------------------------------------
+2026-08-06 02:14:55,208 - INFO - 
+2026-08-06 02:14:55,208 - INFO - --------------------------------------------------
+2026-08-06 02:14:55,208 - INFO - Informazioni GOMME
+2026-08-06 02:14:55,208 - INFO - --------------------------------------------------
+2026-08-06 02:14:57,665 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 02:14:57,665 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 02:14:57,665 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 02:14:59,665 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 02:14:59,666 - INFO - 
+2026-08-06 02:14:59,666 - INFO - 
+2026-08-06 02:14:59,666 - INFO - --------------------------------------------------
+2026-08-06 02:14:59,666 - INFO - --------------------------------------------------
+2026-08-06 02:14:59,667 - INFO - Dashboard IRT
+2026-08-06 02:14:59,667 - INFO - Coordinate X,Y,Z
+2026-08-06 02:14:59,667 - INFO - --------------------------------------------------
+2026-08-06 02:14:59,667 - INFO - --------------------------------------------------
+2026-08-06 02:27:08,938 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 02:27:08,938 - INFO - 
+2026-08-06 02:27:08,938 - INFO - --------------------------------------------------
+2026-08-06 02:27:08,938 - INFO - Informazioni sui PILOTI
+2026-08-06 02:27:08,938 - INFO - --------------------------------------------------
+2026-08-06 02:27:09,358 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 02:27:09,358 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 02:27:09,358 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 02:27:09,358 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 02:27:09,358 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 02:27:09,359 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 02:27:09,359 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 02:27:09,359 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 02:27:09,359 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 02:27:09,359 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 02:27:09,359 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 02:27:09,359 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 02:27:09,359 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 02:27:09,359 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 02:27:09,359 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 02:27:09,359 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 02:27:09,359 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 02:27:09,359 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 02:27:09,359 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 02:27:09,360 - INFO - 
+2026-08-06 02:27:09,360 - INFO - --------------------------------------------------
+2026-08-06 02:27:09,360 - INFO - Informazioni sul CIRCUITO
+2026-08-06 02:27:09,360 - INFO - --------------------------------------------------
+2026-08-06 02:27:09,770 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 02:27:09,770 - INFO - --------------------------------------------------
+2026-08-06 02:27:09,771 - INFO - 
+2026-08-06 02:27:09,771 - INFO - --------------------------------------------------
+2026-08-06 02:27:09,771 - INFO - Informazioni GOMME
+2026-08-06 02:27:09,771 - INFO - --------------------------------------------------
+2026-08-06 02:27:10,168 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 02:27:10,169 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 02:27:10,169 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 02:27:12,169 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 02:27:12,170 - INFO - 
+2026-08-06 02:27:12,170 - INFO - 
+2026-08-06 02:27:12,170 - INFO - --------------------------------------------------
+2026-08-06 02:27:12,170 - INFO - --------------------------------------------------
+2026-08-06 02:27:12,170 - INFO - Dashboard IRT
+2026-08-06 02:27:12,170 - INFO - Coordinate X,Y,Z
+2026-08-06 02:27:12,170 - INFO - --------------------------------------------------
+2026-08-06 02:27:12,171 - INFO - --------------------------------------------------
+2026-08-06 02:36:47,324 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 02:36:47,324 - INFO - 
+2026-08-06 02:36:47,324 - INFO - --------------------------------------------------
+2026-08-06 02:36:47,324 - INFO - Informazioni sui PILOTI
+2026-08-06 02:36:47,324 - INFO - --------------------------------------------------
+2026-08-06 02:36:47,758 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 02:36:47,758 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 02:36:47,758 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 02:36:47,758 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 02:36:47,758 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 02:36:47,758 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 02:36:47,758 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 02:36:47,758 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 02:36:47,759 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 02:36:47,759 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 02:36:47,759 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 02:36:47,759 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 02:36:47,759 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 02:36:47,759 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 02:36:47,759 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 02:36:47,759 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 02:36:47,759 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 02:36:47,759 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 02:36:47,759 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 02:36:47,759 - INFO - 
+2026-08-06 02:36:47,760 - INFO - --------------------------------------------------
+2026-08-06 02:36:47,760 - INFO - Informazioni sul CIRCUITO
+2026-08-06 02:36:47,760 - INFO - --------------------------------------------------
+2026-08-06 02:36:48,156 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 02:36:48,156 - INFO - --------------------------------------------------
+2026-08-06 02:36:48,156 - INFO - 
+2026-08-06 02:36:48,156 - INFO - --------------------------------------------------
+2026-08-06 02:36:48,156 - INFO - Informazioni GOMME
+2026-08-06 02:36:48,156 - INFO - --------------------------------------------------
+2026-08-06 02:36:48,549 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 02:36:48,549 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 02:36:48,550 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 02:36:50,550 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 02:36:50,551 - INFO - 
+2026-08-06 02:36:50,551 - INFO - 
+2026-08-06 02:36:50,551 - INFO - --------------------------------------------------
+2026-08-06 02:36:50,551 - INFO - --------------------------------------------------
+2026-08-06 02:36:50,551 - INFO - Dashboard IRT
+2026-08-06 02:36:50,551 - INFO - Coordinate X,Y,Z
+2026-08-06 02:36:50,551 - INFO - --------------------------------------------------
+2026-08-06 02:36:50,551 - INFO - --------------------------------------------------
+2026-08-06 10:01:02,716 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 10:01:02,716 - INFO - 
+2026-08-06 10:01:02,716 - INFO - --------------------------------------------------
+2026-08-06 10:01:02,716 - INFO - Informazioni sui PILOTI
+2026-08-06 10:01:02,717 - INFO - --------------------------------------------------
+2026-08-06 10:01:03,385 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 10:01:03,385 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 10:01:03,385 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 10:01:03,385 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 10:01:03,385 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 10:01:03,385 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 10:01:03,385 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 10:01:03,385 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 10:01:03,385 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 10:01:03,385 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 10:01:03,385 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 10:01:03,386 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 10:01:03,386 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 10:01:03,386 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 10:01:03,386 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 10:01:03,386 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 10:01:03,386 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 10:01:03,386 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 10:01:03,386 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 10:01:03,386 - INFO - 
+2026-08-06 10:01:03,386 - INFO - --------------------------------------------------
+2026-08-06 10:01:03,386 - INFO - Informazioni sul CIRCUITO
+2026-08-06 10:01:03,386 - INFO - --------------------------------------------------
+2026-08-06 10:01:03,800 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 10:01:03,800 - INFO - --------------------------------------------------
+2026-08-06 10:01:03,800 - INFO - 
+2026-08-06 10:01:03,800 - INFO - --------------------------------------------------
+2026-08-06 10:01:03,800 - INFO - Informazioni GOMME
+2026-08-06 10:01:03,801 - INFO - --------------------------------------------------
+2026-08-06 10:01:04,215 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 10:01:04,215 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 10:01:04,215 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 10:01:06,216 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 10:01:06,218 - INFO - 
+2026-08-06 10:01:06,218 - INFO - 
+2026-08-06 10:01:06,219 - INFO - --------------------------------------------------
+2026-08-06 10:01:06,219 - INFO - --------------------------------------------------
+2026-08-06 10:01:06,220 - INFO - Coordinate X,Y,Z
+2026-08-06 10:01:06,220 - INFO - Dashboard IRT
+2026-08-06 10:01:06,220 - INFO - --------------------------------------------------
+2026-08-06 10:01:06,221 - INFO - --------------------------------------------------
+2026-08-06 14:25:20,226 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 14:25:20,227 - INFO - 
+2026-08-06 14:25:20,227 - INFO - --------------------------------------------------
+2026-08-06 14:25:20,227 - INFO - Informazioni sui PILOTI
+2026-08-06 14:25:20,227 - INFO - --------------------------------------------------
+2026-08-06 14:25:20,668 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 14:25:20,668 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 14:25:20,668 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 14:25:20,668 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 14:25:20,669 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 14:25:20,669 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 14:25:20,669 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 14:25:20,669 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 14:25:20,669 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 14:25:20,669 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 14:25:20,669 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 14:25:20,669 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 14:25:20,669 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 14:25:20,669 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 14:25:20,669 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 14:25:20,669 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 14:25:20,669 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 14:25:20,670 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 14:25:20,670 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 14:25:20,670 - INFO - 
+2026-08-06 14:25:20,670 - INFO - --------------------------------------------------
+2026-08-06 14:25:20,670 - INFO - Informazioni sul CIRCUITO
+2026-08-06 14:25:20,670 - INFO - --------------------------------------------------
+2026-08-06 14:25:21,060 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 14:25:21,061 - INFO - --------------------------------------------------
+2026-08-06 14:25:21,061 - INFO - 
+2026-08-06 14:25:21,061 - INFO - --------------------------------------------------
+2026-08-06 14:25:21,061 - INFO - Informazioni GOMME
+2026-08-06 14:25:21,061 - INFO - --------------------------------------------------
+2026-08-06 14:25:21,473 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 14:25:21,473 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 14:25:21,473 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 14:25:23,473 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 14:25:23,474 - INFO - 
+2026-08-06 14:25:23,474 - INFO - 
+2026-08-06 14:25:23,474 - INFO - --------------------------------------------------
+2026-08-06 14:25:23,475 - INFO - --------------------------------------------------
+2026-08-06 14:25:23,475 - INFO - Dashboard IRT
+2026-08-06 14:25:23,475 - INFO - Coordinate X,Y,Z
+2026-08-06 14:25:23,475 - INFO - --------------------------------------------------
+2026-08-06 14:25:23,475 - INFO - --------------------------------------------------
+2026-08-06 14:33:46,390 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 14:33:46,391 - INFO - 
+2026-08-06 14:33:46,391 - INFO - --------------------------------------------------
+2026-08-06 14:33:46,391 - INFO - Informazioni sui PILOTI
+2026-08-06 14:33:46,391 - INFO - --------------------------------------------------
+2026-08-06 14:33:46,834 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 14:33:46,834 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 14:33:46,834 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 14:33:46,834 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 14:33:46,834 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 14:33:46,834 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 14:33:46,834 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 14:33:46,835 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 14:33:46,835 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 14:33:46,835 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 14:33:46,835 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 14:33:46,835 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 14:33:46,835 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 14:33:46,835 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 14:33:46,835 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 14:33:46,835 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 14:33:46,835 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 14:33:46,835 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 14:33:46,835 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 14:33:46,836 - INFO - 
+2026-08-06 14:33:46,836 - INFO - --------------------------------------------------
+2026-08-06 14:33:46,836 - INFO - Informazioni sul CIRCUITO
+2026-08-06 14:33:46,836 - INFO - --------------------------------------------------
+2026-08-06 14:33:47,235 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 14:33:47,236 - INFO - --------------------------------------------------
+2026-08-06 14:33:47,236 - INFO - 
+2026-08-06 14:33:47,236 - INFO - --------------------------------------------------
+2026-08-06 14:33:47,236 - INFO - Informazioni GOMME
+2026-08-06 14:33:47,236 - INFO - --------------------------------------------------
+2026-08-06 14:33:48,943 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 14:33:48,943 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 14:33:48,944 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 14:33:50,944 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 14:33:50,945 - INFO - 
+2026-08-06 14:33:50,945 - INFO - --------------------------------------------------
+2026-08-06 14:33:50,945 - INFO - Coordinate X,Y,Z
+2026-08-06 14:33:50,945 - INFO - --------------------------------------------------
+2026-08-06 14:56:13,387 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 14:56:13,388 - INFO - 
+2026-08-06 14:56:13,388 - INFO - --------------------------------------------------
+2026-08-06 14:56:13,388 - INFO - Informazioni sui PILOTI
+2026-08-06 14:56:13,388 - INFO - --------------------------------------------------
+2026-08-06 14:56:14,597 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 14:56:14,597 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 14:56:14,597 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 14:56:14,597 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 14:56:14,597 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 14:56:14,597 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 14:56:14,597 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 14:56:14,597 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 14:56:14,598 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 14:56:14,598 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 14:56:14,598 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 14:56:14,598 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 14:56:14,598 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 14:56:14,598 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 14:56:14,598 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 14:56:14,598 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 14:56:14,598 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 14:56:14,598 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 14:56:14,598 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 14:56:14,599 - INFO - 
+2026-08-06 14:56:14,599 - INFO - --------------------------------------------------
+2026-08-06 14:56:14,599 - INFO - Informazioni sul CIRCUITO
+2026-08-06 14:56:14,599 - INFO - --------------------------------------------------
+2026-08-06 14:56:15,012 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 14:56:15,012 - INFO - --------------------------------------------------
+2026-08-06 14:56:15,012 - INFO - 
+2026-08-06 14:56:15,012 - INFO - --------------------------------------------------
+2026-08-06 14:56:15,012 - INFO - Informazioni GOMME
+2026-08-06 14:56:15,012 - INFO - --------------------------------------------------
+2026-08-06 14:56:15,455 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 14:56:15,456 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 14:56:15,456 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 14:56:17,456 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 14:56:17,457 - INFO - 
+2026-08-06 14:56:17,457 - INFO - 
+2026-08-06 14:56:17,457 - INFO - --------------------------------------------------
+2026-08-06 14:56:17,458 - INFO - --------------------------------------------------
+2026-08-06 14:56:17,458 - INFO - Dashboard IRT
+2026-08-06 14:56:17,458 - INFO - Coordinate X,Y,Z
+2026-08-06 14:56:17,458 - INFO - --------------------------------------------------
+2026-08-06 14:56:17,458 - INFO - --------------------------------------------------
+2026-08-06 15:02:05,941 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:02:05,941 - INFO - 
+2026-08-06 15:02:05,941 - INFO - --------------------------------------------------
+2026-08-06 15:02:05,941 - INFO - Informazioni sui PILOTI
+2026-08-06 15:02:05,941 - INFO - --------------------------------------------------
+2026-08-06 15:02:06,369 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:02:06,369 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:02:06,369 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:02:06,369 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:02:06,369 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:02:06,369 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:02:06,369 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:02:06,369 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:02:06,370 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:02:06,370 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:02:06,370 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:02:06,370 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:02:06,370 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:02:06,370 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:02:06,370 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:02:06,370 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:02:06,370 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:02:06,370 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:02:06,370 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:02:06,371 - INFO - 
+2026-08-06 15:02:06,371 - INFO - --------------------------------------------------
+2026-08-06 15:02:06,371 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:02:06,371 - INFO - --------------------------------------------------
+2026-08-06 15:02:06,802 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:02:06,802 - INFO - --------------------------------------------------
+2026-08-06 15:02:06,803 - INFO - 
+2026-08-06 15:02:06,803 - INFO - --------------------------------------------------
+2026-08-06 15:02:06,803 - INFO - Informazioni GOMME
+2026-08-06 15:02:06,803 - INFO - --------------------------------------------------
+2026-08-06 15:02:07,199 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:02:07,199 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:02:07,200 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:02:09,202 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:02:09,203 - INFO - 
+2026-08-06 15:02:09,203 - INFO - 
+2026-08-06 15:02:09,203 - INFO - --------------------------------------------------
+2026-08-06 15:02:09,203 - INFO - --------------------------------------------------
+2026-08-06 15:02:09,203 - INFO - Dashboard IRT
+2026-08-06 15:02:09,204 - INFO - Coordinate X,Y,Z
+2026-08-06 15:02:09,204 - INFO - --------------------------------------------------
+2026-08-06 15:02:09,204 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,069 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:12:56,069 - INFO - 
+2026-08-06 15:12:56,069 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,069 - INFO - Informazioni sui PILOTI
+2026-08-06 15:12:56,069 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,525 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:12:56,525 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:12:56,525 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:12:56,525 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:12:56,526 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:12:56,526 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:12:56,526 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:12:56,526 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:12:56,526 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:12:56,526 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:12:56,526 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:12:56,526 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:12:56,526 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:12:56,526 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:12:56,526 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:12:56,526 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:12:56,526 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:12:56,526 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:12:56,527 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:12:56,527 - INFO - 
+2026-08-06 15:12:56,527 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,527 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:12:56,527 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,970 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:12:56,970 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,970 - INFO - 
+2026-08-06 15:12:56,970 - INFO - --------------------------------------------------
+2026-08-06 15:12:56,970 - INFO - Informazioni GOMME
+2026-08-06 15:12:56,970 - INFO - --------------------------------------------------
+2026-08-06 15:12:58,107 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:12:58,107 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:12:58,107 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:13:00,108 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:13:00,109 - INFO - 
+2026-08-06 15:13:00,109 - INFO - 
+2026-08-06 15:13:00,109 - INFO - --------------------------------------------------
+2026-08-06 15:13:00,109 - INFO - --------------------------------------------------
+2026-08-06 15:13:00,109 - INFO - Dashboard IRT
+2026-08-06 15:13:00,109 - INFO - Coordinate X,Y,Z
+2026-08-06 15:13:00,109 - INFO - --------------------------------------------------
+2026-08-06 15:13:00,109 - INFO - --------------------------------------------------
+2026-08-06 15:28:41,393 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:28:41,393 - INFO - 
+2026-08-06 15:28:41,393 - INFO - --------------------------------------------------
+2026-08-06 15:28:41,393 - INFO - Informazioni sui PILOTI
+2026-08-06 15:28:41,393 - INFO - --------------------------------------------------
+2026-08-06 15:28:41,822 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:28:41,822 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:28:41,822 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:28:41,822 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:28:41,822 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:28:41,823 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:28:41,823 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:28:41,823 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:28:41,823 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:28:41,823 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:28:41,823 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:28:41,823 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:28:41,823 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:28:41,823 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:28:41,823 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:28:41,823 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:28:41,823 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:28:41,823 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:28:41,824 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:28:41,824 - INFO - 
+2026-08-06 15:28:41,824 - INFO - --------------------------------------------------
+2026-08-06 15:28:41,824 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:28:41,824 - INFO - --------------------------------------------------
+2026-08-06 15:28:42,814 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:28:42,814 - INFO - --------------------------------------------------
+2026-08-06 15:28:42,815 - INFO - 
+2026-08-06 15:28:42,815 - INFO - --------------------------------------------------
+2026-08-06 15:28:42,815 - INFO - Informazioni GOMME
+2026-08-06 15:28:42,815 - INFO - --------------------------------------------------
+2026-08-06 15:28:43,212 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:28:43,213 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:28:43,213 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:28:45,213 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:28:45,214 - INFO - 
+2026-08-06 15:28:45,214 - INFO - 
+2026-08-06 15:28:45,214 - INFO - --------------------------------------------------
+2026-08-06 15:28:45,214 - INFO - --------------------------------------------------
+2026-08-06 15:28:45,214 - INFO - Dashboard IRT
+2026-08-06 15:28:45,214 - INFO - Coordinate X,Y,Z
+2026-08-06 15:28:45,214 - INFO - --------------------------------------------------
+2026-08-06 15:28:45,214 - INFO - --------------------------------------------------
+2026-08-06 15:32:35,933 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:32:35,933 - INFO - 
+2026-08-06 15:32:35,933 - INFO - --------------------------------------------------
+2026-08-06 15:32:35,933 - INFO - Informazioni sui PILOTI
+2026-08-06 15:32:35,933 - INFO - --------------------------------------------------
+2026-08-06 15:32:36,352 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:32:36,352 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:32:36,352 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:32:36,352 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:32:36,352 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:32:36,352 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:32:36,352 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:32:36,352 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:32:36,352 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:32:36,352 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:32:36,352 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:32:36,353 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:32:36,353 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:32:36,353 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:32:36,353 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:32:36,353 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:32:36,353 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:32:36,353 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:32:36,353 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:32:36,353 - INFO - 
+2026-08-06 15:32:36,353 - INFO - --------------------------------------------------
+2026-08-06 15:32:36,353 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:32:36,353 - INFO - --------------------------------------------------
+2026-08-06 15:32:37,076 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:32:37,076 - INFO - --------------------------------------------------
+2026-08-06 15:32:37,076 - INFO - 
+2026-08-06 15:32:37,076 - INFO - --------------------------------------------------
+2026-08-06 15:32:37,076 - INFO - Informazioni GOMME
+2026-08-06 15:32:37,076 - INFO - --------------------------------------------------
+2026-08-06 15:32:37,500 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:32:37,500 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:32:37,500 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:32:39,501 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:32:39,502 - INFO - 
+2026-08-06 15:32:39,502 - INFO - 
+2026-08-06 15:32:39,502 - INFO - --------------------------------------------------
+2026-08-06 15:32:39,502 - INFO - --------------------------------------------------
+2026-08-06 15:32:39,502 - INFO - Dashboard IRT
+2026-08-06 15:32:39,502 - INFO - Coordinate X,Y,Z
+2026-08-06 15:32:39,502 - INFO - --------------------------------------------------
+2026-08-06 15:32:39,502 - INFO - --------------------------------------------------
+2026-08-06 15:35:20,470 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:35:20,470 - INFO - 
+2026-08-06 15:35:20,470 - INFO - --------------------------------------------------
+2026-08-06 15:35:20,470 - INFO - Informazioni sui PILOTI
+2026-08-06 15:35:20,470 - INFO - --------------------------------------------------
+2026-08-06 15:35:20,891 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:35:20,892 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:35:20,892 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:35:20,892 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:35:20,892 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:35:20,892 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:35:20,892 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:35:20,892 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:35:20,892 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:35:20,892 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:35:20,892 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:35:20,892 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:35:20,893 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:35:20,893 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:35:20,893 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:35:20,893 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:35:20,893 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:35:20,893 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:35:20,893 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:35:20,893 - INFO - 
+2026-08-06 15:35:20,893 - INFO - --------------------------------------------------
+2026-08-06 15:35:20,893 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:35:20,894 - INFO - --------------------------------------------------
+2026-08-06 15:35:21,337 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:35:21,337 - INFO - --------------------------------------------------
+2026-08-06 15:35:21,337 - INFO - 
+2026-08-06 15:35:21,337 - INFO - --------------------------------------------------
+2026-08-06 15:35:21,337 - INFO - Informazioni GOMME
+2026-08-06 15:35:21,337 - INFO - --------------------------------------------------
+2026-08-06 15:35:21,759 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:35:21,760 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:35:21,760 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:35:23,760 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:35:23,761 - INFO - 
+2026-08-06 15:35:23,761 - INFO - 
+2026-08-06 15:35:23,761 - INFO - --------------------------------------------------
+2026-08-06 15:35:23,762 - INFO - --------------------------------------------------
+2026-08-06 15:35:23,762 - INFO - Dashboard IRT
+2026-08-06 15:35:23,762 - INFO - Coordinate X,Y,Z
+2026-08-06 15:35:23,762 - INFO - --------------------------------------------------
+2026-08-06 15:35:23,762 - INFO - --------------------------------------------------
+2026-08-06 15:39:03,032 - INFO - Inviando pacchetti di SETUP INIZIALE via UDP...
+2026-08-06 15:39:03,032 - INFO - 
+2026-08-06 15:39:03,032 - INFO - --------------------------------------------------
+2026-08-06 15:39:03,032 - INFO - Informazioni sui PILOTI
+2026-08-06 15:39:03,032 - INFO - --------------------------------------------------
+2026-08-06 15:39:03,480 - INFO - Auto: #1| VER | Max VERSTAPPEN | Colore: #3671C6 |
+2026-08-06 15:39:03,480 - INFO - Auto: #2| SAR | Logan SARGEANT | Colore: #37BEDD |
+2026-08-06 15:39:03,481 - INFO - Auto: #4| NOR | Lando NORRIS | Colore: #F58020 |
+2026-08-06 15:39:03,481 - INFO - Auto: #10| GAS | Pierre GASLY | Colore: #2293D1 |
+2026-08-06 15:39:03,481 - INFO - Auto: #11| PER | Sergio PEREZ | Colore: #3671C6 |
+2026-08-06 15:39:03,481 - INFO - Auto: #14| ALO | Fernando ALONSO | Colore: #358C75 |
+2026-08-06 15:39:03,481 - INFO - Auto: #16| LEC | Charles LECLERC | Colore: #F91536 |
+2026-08-06 15:39:03,481 - INFO - Auto: #20| MAG | Kevin MAGNUSSEN | Colore: #B6BABD |
+2026-08-06 15:39:03,481 - INFO - Auto: #22| TSU | Yuki TSUNODA | Colore: #5E8FAA |
+2026-08-06 15:39:03,481 - INFO - Auto: #23| ALB | Alexander ALBON | Colore: #37BEDD |
+2026-08-06 15:39:03,481 - INFO - Auto: #24| ZHO | ZHOU Guanyu | Colore: #C92D4B |
+2026-08-06 15:39:03,481 - INFO - Auto: #27| HUL | Nico HULKENBERG | Colore: #B6BABD |
+2026-08-06 15:39:03,481 - INFO - Auto: #31| OCO | Esteban OCON | Colore: #2293D1 |
+2026-08-06 15:39:03,481 - INFO - Auto: #40| LAW | Liam LAWSON | Colore: #5E8FAA |
+2026-08-06 15:39:03,481 - INFO - Auto: #44| HAM | Lewis HAMILTON | Colore: #6CD3BF |
+2026-08-06 15:39:03,481 - INFO - Auto: #55| SAI | Carlos SAINZ | Colore: #F91536 |
+2026-08-06 15:39:03,481 - INFO - Auto: #63| RUS | George RUSSELL | Colore: #6CD3BF |
+2026-08-06 15:39:03,482 - INFO - Auto: #77| BOT | Valtteri BOTTAS | Colore: #C92D4B |
+2026-08-06 15:39:03,482 - INFO - Auto: #81| PIA | Oscar PIASTRI | Colore: #F58020 |
+2026-08-06 15:39:03,482 - INFO - 
+2026-08-06 15:39:03,482 - INFO - --------------------------------------------------
+2026-08-06 15:39:03,482 - INFO - Informazioni sul CIRCUITO
+2026-08-06 15:39:03,482 - INFO - --------------------------------------------------
+2026-08-06 15:39:04,840 - INFO - | Circuito: Singapore (Singapore) | Sessione: Race | Tipo: Race |
+2026-08-06 15:39:04,840 - INFO - --------------------------------------------------
+2026-08-06 15:39:04,841 - INFO - 
+2026-08-06 15:39:04,841 - INFO - --------------------------------------------------
+2026-08-06 15:39:04,843 - INFO - Informazioni GOMME
+2026-08-06 15:39:04,843 - INFO - --------------------------------------------------
+2026-08-06 15:39:06,260 - INFO - Numero stint: #1| Mescola: HARD | Gomme usate: 0 | Giro iniziale: 1 | Giro finale: 40 |
+2026-08-06 15:39:06,261 - INFO - Numero stint: #2| Mescola: MEDIUM | Gomme usate: 0 | Giro iniziale: 41 | Giro finale: 62 |
+2026-08-06 15:39:06,261 - INFO - Setup completato. Pausa per permettere a Unreal Engine di elaborare...
+2026-08-06 15:39:08,262 - INFO - Avvio dei flussi di telemetria in tempo reale...
+2026-08-06 15:39:08,265 - INFO - 
+2026-08-06 15:39:08,267 - INFO - 
+2026-08-06 15:39:08,268 - INFO - --------------------------------------------------
+2026-08-06 15:39:08,268 - INFO - --------------------------------------------------
+2026-08-06 15:39:08,268 - INFO - Coordinate X,Y,Z
+2026-08-06 15:39:08,269 - INFO - --------------------------------------------------
+2026-08-06 15:39:08,270 - INFO - Dashboard IRT
+2026-08-06 15:39:08,270 - INFO - --------------------------------------------------
